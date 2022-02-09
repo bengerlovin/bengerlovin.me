@@ -2,14 +2,14 @@ module.exports = {
   content: ['./pages/**/*.{js,jsx,tsx,ts}', './layouts/**/*.{js,jsx,tsx,ts}', './components/**/*.{js,jsx,tsx,ts}'],
   theme: {
     fontFamily: {
-      lora: "'lora', serif",
-      pt_serif: "'PT Serif', serif",
       inter: "'Inter', sans-serif",
-      noto_serif: "'Noto Serif', serif"
+      heading: "'DM Serif Display', serif",
+      'body': ["'Inter'", 'sans-serif'],
     },
     extend: {
       letterSpacing: {
-        'tightHeading': '-0.075em'
+        'tightest': '-0.056em',
+        'tightHeading': '-0.065em'
       },
     },
   },
