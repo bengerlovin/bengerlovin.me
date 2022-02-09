@@ -3,7 +3,9 @@ import React from 'react';
 export default function PageSection({ children }) {
   return (
     <>
-      <div>{children}</div>
+      <section className='flex flex-col items-start justify-center'>
+        {children}
+      </section>
     </>
   );
 }
