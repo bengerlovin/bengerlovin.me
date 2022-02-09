@@ -7,7 +7,11 @@ module.exports = {
       inter: "'Inter', sans-serif",
       noto_serif: "'Noto Serif', serif"
     },
-    extend: {},
+    extend: {
+      letterSpacing: {
+        'tightHeading': '-0.075em'
+      },
+    },
   },
   plugins: [],
 }

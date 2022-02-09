@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
-        <PageSection>
+        {/* <PageSection>
           <h1 className='mb-4 text-2xl font-bold tracking-tight text-gray-800 font-lora'>
             This is a title in Lora
           </h1>
@@ -20,17 +20,17 @@ export default function Home() {
           <h1 className='mb-4 text-2xl font-bold tracking-tight text-gray-800 font-pt_serif'>
             This is a title in PT Serif
           </h1>
-        </PageSection>
+        </PageSection> */}
 
         <PageSection>
-          <h1 className='mb-4 text-2xl font-bold tracking-tight text-gray-800 font-noto_serif'>
-            This is a title in Noto Serif
+          <h1 className='mb-4 text-5xl font-bold text-gray-800 tracking-tightHeading font-noto_serif'>
+            Hey. I'm Ben.
           </h1>
         </PageSection>
 
         {/* Backstory / Timeline */}
         <PageSection>
-          <div className='text-blue-600 font-inter'>
+          <div className='text-gray-600 font-inter'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant
             morbi tristique senectus et netus. Convallis posuere morbi leo urna
