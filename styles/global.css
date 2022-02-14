@@ -1,12 +1,43 @@
 /* global fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500&family=Lato:ital,wght@0,900;1,900&family=Poppins:ital,wght@0,700;1,700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* Logo Animation */
+
+
+
+#logo > #logo-elements > #hide-layer { 
+    transition: transform 0.35s ease-in-out; 
+    
+}
+/* cubic-bezier(0.5, 0.41, 0.58, 0.80) */
+
+#logo:hover > #logo-elements > #hide-layer {
+    transform: translateX(100%);
+    
+}
+
+
+/*  font faces */
 @font-face {
   font-family: 'Soehne';
   font-display: swap;
   src: url(/fonts/soehne-semibold.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'League Spartan';
+  font-display: swap;
+  src: url(/fonts/leaguespartan-bold.woff) format('woff');
+}
+
+:root {
+    
+}
+
+

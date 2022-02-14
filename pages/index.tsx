@@ -12,7 +12,7 @@ export default function Home() {
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
         <PageSection>
-          <h2 className='mb-4 text-5xl font-bold leading-[1.05] tracking-tightest text-zinc-800 md:tracking-tight md:text-5xl font-heading'>
+          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold leading-[1.08] tracking-tighter text-zinc-800 font-lato'>
             Hey, I'm Ben. <br className='md:hidden' /> I build websites.
           </h2>
         </PageSection>
@@ -20,7 +20,7 @@ export default function Home() {
         {/* Backstory / Timeline */}
         <PageSection>
           <div className='mt-3 text-xl text-gray-600'>
-            <p>I'm currently working as a full-stack developer at <a className='underline transition-all duration-[175ms] rounded-sm decoration-2 ease-in-out decoration-blue-500 hover:bg-blue-100 hover:text-blue-800'>Sponsorium, Inc.</a> Integrate with <a className='underline decoration-yellow-500 decoration-2'>Goodreads</a> to show how many books I'm reading and with <a className='underline decoration-green-500 decoration-2'>YouTube API</a>, maybe also the  <a className='underline decoration-violet-500 decoration-2'>Github API</a> as well. </p>
+            <p>I'm currently working as a full-stack developer at <a className='transition-all ease-in-out underline duration-[205ms] rounded-sm decoration-2  decoration-blue-500 hover:bg-blue-100 hover:text-blue-800'>Sponsorium, Inc.</a> Integrate with <a className='underline decoration-yellow-500 decoration-2'>Goodreads</a> to show how many books I'm reading and with <a className='underline decoration-green-500 decoration-2'>YouTube API</a>, maybe also the  <a className='underline decoration-violet-500 decoration-2'>Github API</a> as well. </p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
             </div> */}
@@ -29,6 +29,12 @@ export default function Home() {
 
         {/* Featured Project Cards */}
         <PageSection margin="mt-14">
+
+
+          <div className='flex flex-col w-full p-6 rounded-md shadow-soft'>
+            <span>Project Card</span>
+            <span>image</span>
+          </div>
 
 
           {/* <div className="relative h-36 w-36">
