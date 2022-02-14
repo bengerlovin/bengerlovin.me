@@ -3,78 +3,63 @@ import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div>
+    <div className=''>
       <NavBar />
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
-        {/* <PageSection>
-          <h1 className='mb-4 text-2xl font-bold tracking-tight text-gray-800 font-lora'>
-            This is a title in Lora
-          </h1>
-        </PageSection>
-
         <PageSection>
-          <h1 className='mb-4 text-2xl font-bold tracking-tight text-gray-800 font-pt_serif'>
-            This is a title in PT Serif
-          </h1>
-        </PageSection> */}
-
-        <PageSection>
-          <h1 className='mb-4 text-5xl font-bold text-gray-800 tracking-tightest md:tracking-tight font-heading'>
-            Hey. I'm Ben.
-          </h1>
+          <h2 className='mb-4 text-5xl font-bold leading-[1.05] tracking-tightest text-zinc-800 md:tracking-tight md:text-5xl font-heading'>
+            Hey, I'm Ben. <br className='md:hidden' /> I build websites.
+          </h2>
         </PageSection>
 
         {/* Backstory / Timeline */}
         <PageSection>
-          <div className='text-gray-600'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant
-            morbi tristique senectus et netus. Convallis posuere morbi leo urna
-            molestie. Vitae nunc sed velit dignissim. Amet nisl suscipit
-            adipiscing bibendum. At in tellus integer feugiat scelerisque varius
-            morbi enim. Nunc congue nisi vitae suscipit tellus mauris a. Duis ut
-            diam quam nulla porttitor massa id neque aliquam. In massa tempor
-            nec feugiat nisl. Id volutpat lacus laoreet non curabitur gravida
-            arcu ac. Sapien nec sagittis aliquam malesuada bibendum arcu.
-            Imperdiet sed euismod nisi porta lorem mollis. Aliquet nibh praesent
-            tristique magna sit amet purus gravida quis. Sodales neque sodales
-            ut etiam sit amet. Vitae elementum curabitur vitae nunc sed velit
-            dignissim sodales ut. Elementum nisi quis eleifend quam.
+          <div className='mt-3 text-xl text-gray-600'>
+            <p>I'm currently working as a full-stack developer at <a className='underline transition-all duration-[175ms] rounded-sm decoration-2 ease-in-out decoration-blue-500 hover:bg-blue-100 hover:text-blue-800'>Sponsorium, Inc.</a> Integrate with <a className='underline decoration-yellow-500 decoration-2'>Goodreads</a> to show how many books I'm reading and with <a className='underline decoration-green-500 decoration-2'>YouTube API</a>, maybe also the  <a className='underline decoration-violet-500 decoration-2'>Github API</a> as well. </p>
+            {/* <div className='my-4'>
+              <p> Currently based in &rarr; Montreal</p>
+            </div> */}
           </div>
         </PageSection>
 
-        <PageSection>
-          <Link passHref href='/projects/hht' as='/projects/hht'>
-            <a className='px-2 py-1 m-4 border-blue-500 rounded-md border-[0.5px]'>
-              HHT Project Test
-            </a>
-          </Link>
+        {/* Featured Project Cards */}
+        <PageSection margin="mt-14">
+
+
+          {/* <div className="relative h-36 w-36">
+              <Image className="rounded-full" src={'/../public/images/profile-pic.jpg'} layout="fill" />
+            </div> */}
+
+
         </PageSection>
 
-        {/* Skills And Experience */}
         <PageSection>
-          <Link href='/projects/speedscanr' as='/projects/speedscanr'>
-            <a className='px-2 py-1 m-4 border-blue-500 rounded-md border-[0.5px]'>
+
+        </PageSection>
+
+
+        {/* About And Skills And Experience */}
+        <PageSection>
+          {/* <Link href='/projects/speedscanr' as='/projects/speedscanr'>
+            <a className='px-2 py-1
+            my-5 border-blue-500 rounded-md border-[0.5px]'>
               Speed Scanr
             </a>
-          </Link>
-        </PageSection>
-
-        {/* Projects */}
-        <PageSection>
-          {/* <Link href='/projects/hht' as='/projects/hht'>
-            <a>HHt Project</a>
-          </Link>
-          <Link href='/projects/speedscanr' as='/projects/speedscanr'>
-            <a>Speed scanr Project</a>
           </Link> */}
         </PageSection>
+
+        {/* Get In Touch Section */}
+        <PageSection>
+
+        </PageSection>
+
       </PageContainer>
       <Footer />
-    </div>
+    </div >
   );
 }

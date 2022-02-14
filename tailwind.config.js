@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: "'Inter', sans-serif",
+      dmserif: "'DM Serif Text', serif",
       heading: "'DM Serif Display', serif",
       'body': ["'Inter'", 'sans-serif'],
     },
