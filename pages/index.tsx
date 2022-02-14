@@ -2,8 +2,6 @@ import Footer from '@/components/Navigation/Footer';
 import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
-import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -12,7 +10,7 @@ export default function Home() {
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
         <PageSection>
-          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold leading-[1.08] tracking-tighter text-zinc-800 font-lato'>
+          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold tracking-tighter text-zinc-800 font-lato'>
             Hey, I'm Ben. <br className='md:hidden' /> I build websites.
           </h2>
         </PageSection>

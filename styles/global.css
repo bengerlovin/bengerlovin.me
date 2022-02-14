@@ -8,9 +8,6 @@
 
 
 /* Logo Animation */
-
-
-
 #logo > #logo-elements > #hide-layer { 
     transition: transform 0.35s ease-in-out; 
     
@@ -36,8 +33,5 @@
   src: url(/fonts/leaguespartan-bold.woff) format('woff');
 }
 
-:root {
-    
-}
 
 
