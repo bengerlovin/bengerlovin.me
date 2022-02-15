@@ -2,6 +2,7 @@ import Footer from '@/components/Navigation/Footer';
 import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
+import SpecialLink from '@/components/SpecialLink';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         {/* Backstory / Timeline */}
         <PageSection>
           <div className='mt-3 text-xl text-gray-600'>
-            <p>I'm currently working as a full-stack developer at <a className='transition-all ease-in-out underline duration-[205ms] rounded-sm decoration-2  decoration-blue-500 hover:bg-blue-100 hover:text-blue-800'>Sponsorium, Inc.</a> Integrate with <a className='underline decoration-yellow-500 decoration-2'>Goodreads</a> to show how many books I'm reading and with <a className='underline decoration-green-500 decoration-2'>YouTube API</a>, maybe also the  <a className='underline decoration-violet-500 decoration-2'>Github API</a> as well. </p>
+            <p>I'm currently working as a full-stack developer at <SpecialLink href='https://www.sponsor.com/' variant='blue'> Sponsorium, Inc</SpecialLink>. Integrate with <SpecialLink variant='yellow'>Goodreads</SpecialLink> to show how many books I'm reading and with <SpecialLink variant='green'>YouTube API</SpecialLink>, maybe also the  <SpecialLink variant='purple'>Github API as well.</SpecialLink> </p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
             </div> */}

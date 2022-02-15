@@ -14,7 +14,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className='md:hidden' >
-            <Hamburger direction='left' size={18} hideOutline={true} />
+            <Hamburger direction='left' size={18} hideOutline={true} distance="sm" label={"Show menu"} />
           </div>
         </div>
       </nav>
