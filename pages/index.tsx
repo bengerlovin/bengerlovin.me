@@ -3,8 +3,9 @@ import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import SpecialLink from '@/components/SpecialLink';
+import getLatestPosts from 'lib/wordpress-posts';
 
-export default function Home() {
+export default function Home({ latestPosts }) {
   return (
     <div className=''>
       <NavBar />
@@ -30,6 +31,7 @@ export default function Home() {
         <PageSection margin="mt-14">
 
 
+          {/*  display screenshot of project like in madebyproxy.com */}
           <div className='flex flex-col w-full p-6 rounded-md shadow-soft'>
             <span>Project Card</span>
             <span>image</span>
@@ -44,6 +46,16 @@ export default function Home() {
         </PageSection>
 
         <PageSection>
+
+          {/* Latest Posts Section */}
+
+          {/* {latestPosts && (
+            <div>
+              {latestPosts.map((postItem) => (
+                <p key={postItem.id}>{postItem.title.rendered}</p>
+              ))}
+            </div>
+          )} */}
 
         </PageSection>
 
@@ -67,4 +79,15 @@ export default function Home() {
       <Footer />
     </div >
   );
+}
+
+export async function getStaticProps() {
+
+  console.log("in get static props")
+
+  let latestPosts = await getLatestPosts();
+  latestPosts = JSON.parse(JSON.stringify(latestPosts))
+  return {
+    props: { latestPosts }
+  }
 }
