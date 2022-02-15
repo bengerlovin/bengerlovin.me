@@ -9,5 +9,6 @@ export type WordPressPostsResult = {
     title: { rendered: string };
     tags: number[];
     sticky: boolean;
+    qubely_featured_image_url: { full: [string | number] }
 
 }
