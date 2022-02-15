@@ -4,7 +4,7 @@ export default async function getLatestPosts() {
 
     try {
 
-        let rawPosts = await fetch(process.env.WORDPRESS_API_ENDPOINT)
+        let rawPosts = await fetch('https://happyhealthytechie.com/wp-json/wp/v2/posts')
 
         const data: WordPressPostsResult[] = await rawPosts.json();
 

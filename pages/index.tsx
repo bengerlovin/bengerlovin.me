@@ -81,6 +81,8 @@ export default function Home({ latestPosts }) {
   );
 }
 
+
+
 export async function getStaticProps() {
 
   console.log("in get static props")
