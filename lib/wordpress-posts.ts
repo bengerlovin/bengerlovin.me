@@ -1,10 +1,12 @@
+import { WordPressPostsResult } from "@/types/DataTypes";
+
 export default async function getLatestPosts() {
 
     try {
 
         let rawPosts = await fetch(process.env.WORDPRESS_API_ENDPOINT)
 
-        const data = await rawPosts.json();
+        const data: WordPressPostsResult[] = await rawPosts.json();
 
         return data;
     }
