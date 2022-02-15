@@ -7,7 +7,7 @@
       "@/types/*": ["types/*"],
       "@/styles/*": ["styles/*"],
       "@/scripts/*": ["scripts/*"],
-      "@/lib/*": ["lib/*"],
+      "@/lib/*" : ["*", "lib/*"],
       "@/layouts/*": ["layouts/*"]
     }
   }
