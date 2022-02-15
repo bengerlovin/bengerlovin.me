@@ -60,6 +60,7 @@ async function getCommitsFromBranch(repoName: string) {
         owner: owner,
         repo: repoName,
         since: thirtyDaysAgo,
+        per_page: 100,
     })
 
     return { repo: repoName, commitData: commits?.data };
