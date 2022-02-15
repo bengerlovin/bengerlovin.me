@@ -53,7 +53,7 @@ const ContactForm = ({ }) => {
                             type="email"
                             name="email"
                             className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalEmailStyling}`}
-                            placeholder="dwight@dundermifflin.com"
+                            placeholder="d@dundermifflin.com"
                             onChange={formik.handleChange}
                             value={formik.values.email}
                         />
