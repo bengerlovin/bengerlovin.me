@@ -13,8 +13,8 @@ export default function Navigation() {
           <div className='hidden md:visible'> second nav item </div>
 
           {/* Mobile Menu Button */}
-          <div className='md:hidden'>
-            <Hamburger direction='left' />
+          <div className='md:hidden' >
+            <Hamburger direction='left' size={18} hideOutline={true} />
           </div>
         </div>
       </nav>
