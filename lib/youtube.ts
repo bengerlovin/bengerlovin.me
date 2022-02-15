@@ -1,9 +1,10 @@
 import { google, youtube_v3, Auth } from 'googleapis'
 import * as duration from 'duration-fns'
 
-let googleAuth: Auth.GoogleAuth;
 
 export default async function getYoutubeStats() {
+
+    let googleAuth: Auth.GoogleAuth;
 
     // global variables
     let totalPlaybackTime = 0;
@@ -45,9 +46,9 @@ export default async function getYoutubeStats() {
         }
 
     }
+    totalPlaybackTime = parseInt(totalPlaybackTime.toFixed(0));
+    console.log(totalPlaybackTime)
 
-    console.log("total video playback time", totalPlaybackTime)
-
-    return parseInt(totalPlaybackTime.toFixed(0))
+    return totalPlaybackTime;
 
 };

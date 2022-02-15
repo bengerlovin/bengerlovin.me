@@ -98,6 +98,6 @@ export async function getStaticProps() {
   let count = commitData.commitCount
 
   return {
-    props: { commitCount: count, playbackTime: recentPlaybackTime, youTubeStats: JSON.parse(JSON.stringify(ytStats)) }
+    props: { commitCount: count, playbackTime: recentPlaybackTime, youTubeStats: ytStats }
   }
 }
