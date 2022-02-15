@@ -12,3 +12,11 @@ export type WordPressPostsResult = {
     qubely_featured_image_url: { full: [string | number] }
 
 }
+
+export type GithubCommitDataResult = {
+    commitCount: number;
+    commitData: {
+        repo: string,
+        commitData: any[],
+    }[]
+}

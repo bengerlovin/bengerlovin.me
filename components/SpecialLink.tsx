@@ -1,6 +1,6 @@
 type SpecialLinkProps = {
     children: React.ReactNode;
-    variant?: 'blue' | 'yellow' | 'green' | 'purple'
+    variant?: 'blue' | 'yellow' | 'green' | 'purple' | 'rose'
     href?: string;
     target?: 'blank' | 'default';
 }
@@ -23,7 +23,10 @@ const SpecialLink = ({ children, variant, href, target }: SpecialLinkProps) => {
         classes = 'decoration-green-500 hover:bg-green-100 hover:text-green-800'
     } else if (variant === 'purple') {
         classes = 'decoration-violet-500 hover:bg-violet-100 hover:text-violet-800'
-    } else {
+    } else if (variant === 'rose') {
+        classes = 'decoration-rose-500 hover:bg-rose-100 hover:text-rose-800'
+    }
+    else {
         // default to blue variant styling
         classes = 'decoration-blue-500 hover:bg-blue-100 hover:text-blue-800'
     }

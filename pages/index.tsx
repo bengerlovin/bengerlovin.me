@@ -3,9 +3,14 @@ import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import SpecialLink from '@/components/SpecialLink';
-import getLatestPosts from 'lib/wordpress-posts';
+import getRecentCommitData from 'lib/github-data';
+import { GithubCommitDataResult } from '@/types/DataTypes';
+import getSpotifyPlayHistory from 'lib/spotify';
 
-export default function Home({ latestPosts }) {
+export default function Home({ commitCount, playbackTime }) {
+
+  console.log(commitCount, playbackTime)
+
   return (
     <div className=''>
       <NavBar />
@@ -20,7 +25,7 @@ export default function Home({ latestPosts }) {
         {/* Backstory / Timeline */}
         <PageSection>
           <div className='mt-3 text-xl text-gray-600'>
-            <p>I'm currently working as a full-stack developer at <SpecialLink href='https://www.sponsor.com/' variant='blue'> Sponsorium, Inc</SpecialLink>. Integrate with <SpecialLink variant='yellow'>Goodreads</SpecialLink> to show how many books I'm reading and with <SpecialLink variant='green'>YouTube API</SpecialLink>, maybe also the  <SpecialLink variant='purple'>Github API as well.</SpecialLink> </p>
+            <p>I'm currently working as a full-stack developer at <SpecialLink href='https://www.sponsor.com/' variant='blue'> Sponsorium, Inc</SpecialLink>. In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink variant='yellow'>340 minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='https://happyhealthytechie.com' variant='green'>4 articles to my developer blog.</SpecialLink></p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
             </div> */}
@@ -29,7 +34,6 @@ export default function Home({ latestPosts }) {
 
         {/* Featured Project Cards */}
         <PageSection margin="mt-14">
-
 
           {/*  display screenshot of project like in madebyproxy.com */}
           <div className='flex flex-col w-full p-6 rounded-md shadow-soft'>
@@ -83,13 +87,16 @@ export default function Home({ latestPosts }) {
 
 
 
-// export async function getStaticProps() {
+export async function getStaticProps() {
 
-//   console.log("in get static props")
+  console.log("in get static props")
 
-//   let latestPosts = await getLatestPosts();
-//   latestPosts = JSON.parse(JSON.stringify(latestPosts))
-//   return {
-//     props: { latestPosts }
-//   }
-// }
+  let recentPlaybackTime = await getSpotifyPlayHistory();
+
+  let commitData: GithubCommitDataResult = await getRecentCommitData();
+  let count = commitData.commitCount
+
+  return {
+    props: { commitCount: count, playbackTime: recentPlaybackTime }
+  }
+}
