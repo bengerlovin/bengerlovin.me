@@ -82,7 +82,7 @@ export default async function getSpotifyPlayHistory() {
         return trackItem.track.duration_ms;
     }).reduce((partialSum, a) => partialSum + a, 0);
 
-    totalPlaybackTime = parseFloat(((totalPlaybackTime / 1000) / 60).toFixed(2))
+    totalPlaybackTime = parseInt(((totalPlaybackTime / 1000) / 60).toFixed(2))
 
     return totalPlaybackTime;
 
