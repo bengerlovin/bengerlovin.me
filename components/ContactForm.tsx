@@ -9,17 +9,14 @@ const initialValues = {
     message: '',
 }
 
-
-
 const ContactForm = ({ }) => {
-
 
 
     const formik = useFormik({
         initialValues: initialValues,
         validationSchema: Yup.object(ContactFormSchema),
-        onSubmit: values => {
-            sendEmail(values);
+        onSubmit: async (values) => {
+            await sendEmail(values);
             formik.resetForm()
         },
     });
@@ -40,7 +37,7 @@ const ContactForm = ({ }) => {
                             required
                             type="text"
                             name="name"
-                            className={`block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalNameStyling}`}
+                            className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalNameStyling}`}
                             placeholder="Dwight Schrute"
                             onChange={formik.handleChange}
                             value={formik.values.name}
@@ -55,7 +52,7 @@ const ContactForm = ({ }) => {
                             required
                             type="email"
                             name="email"
-                            className={`block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalEmailStyling}`}
+                            className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalEmailStyling}`}
                             placeholder="dwight@dundermifflin.com"
                             onChange={formik.handleChange}
                             value={formik.values.email}
@@ -73,7 +70,7 @@ const ContactForm = ({ }) => {
                         onChange={formik.handleChange}
                         value={formik.values.message}
                         name="message"
-                        className={`block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalMessageStyling}`}
+                        className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalMessageStyling}`}
                         placeholder="Black bears are the best bear. Bears, beets, Battlestar Galactica..."
                     />
                     {formik.touched.message && formik.errors.message ? (
