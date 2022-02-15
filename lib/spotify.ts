@@ -71,7 +71,7 @@ export default async function getSpotifyPlayHistory() {
 
         let parsed = await results.json();
 
-        trackItems = [...trackItems, ...parsed.items]
+        trackItems = [...trackItems, ...parsed?.items]
         nextURL = parsed.next;
     } while (nextURL != null)
 
