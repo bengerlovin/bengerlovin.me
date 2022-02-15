@@ -10,7 +10,7 @@ export default function Home() {
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
         <PageSection>
-          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold tracking-tighter text-zinc-800 font-lato'>
+          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold leading-[1.08] tracking-tighter text-zinc-800 font-lato'>
             Hey, I'm Ben. <br className='md:hidden' /> I build websites.
           </h2>
         </PageSection>
