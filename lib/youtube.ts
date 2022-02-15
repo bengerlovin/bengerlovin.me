@@ -28,7 +28,6 @@ export default async function getYoutubeStats() {
     // const response = await youtube.channels.list(channelListParams)
 
 
-
     for (const video of videosFromPlaylist.data.items) {
         let videoItem = await youtube.videos.list({
             part: ['contentDetails'],
