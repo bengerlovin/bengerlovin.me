@@ -6,7 +6,7 @@ export default async function getLatestPosts() {
 
         const data = await rawPosts.json();
 
-        return data ? data : null;
+        return data;
     }
     catch (e) {
         console.log("Error in fetching wordpress posts", e)
