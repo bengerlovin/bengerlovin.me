@@ -7,6 +7,7 @@ import getRecentCommitData from 'lib/github-data';
 import { GithubCommitDataResult } from '@/types/DataTypes';
 import getSpotifyPlayHistory from 'lib/spotify';
 import getYoutubeStats from 'lib/youtube';
+import Head from 'next/head'
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
@@ -14,6 +15,10 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
   return (
     <div className=''>
+      <Head>
+        <title>Ben Gerlovin Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <NavBar />
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
