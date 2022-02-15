@@ -83,13 +83,13 @@ export default function Home({ latestPosts }) {
 
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
-  console.log("in get static props")
+//   console.log("in get static props")
 
-  let latestPosts = await getLatestPosts();
-  latestPosts = JSON.parse(JSON.stringify(latestPosts))
-  return {
-    props: { latestPosts }
-  }
-}
+//   let latestPosts = await getLatestPosts();
+//   latestPosts = JSON.parse(JSON.stringify(latestPosts))
+//   return {
+//     props: { latestPosts }
+//   }
+// }
