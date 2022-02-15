@@ -40,14 +40,12 @@ export default async function getYoutubeStats() {
             let minuteLength = duration.toMinutes(duration.parse(videoItem.data.items?.[0].contentDetails.duration))
 
             if (minuteLength) {
-                console.log(minuteLength)
                 totalPlaybackTime += minuteLength;
             }
         }
 
     }
     totalPlaybackTime = parseInt(totalPlaybackTime.toFixed(0));
-    console.log(totalPlaybackTime)
 
     return totalPlaybackTime;
 

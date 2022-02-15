@@ -11,7 +11,7 @@ export default function Footer() {
           <div className='flex items-center justify-between max-w-3xl py-6'>
             <div className='flex-shrink-0 w-1/4'>hello</div>
             <div className='flex-shrink-0 w-1/4'>hello</div>
-            <div className='flex-shrink-0 w-1/4'>hello friendsssssss</div>
+            <div className='flex-shrink-0 w-1/4'>hello frenss</div>
             <div className='flex-shrink-0 w-1/4'>hello</div>
           </div>
         </div>
