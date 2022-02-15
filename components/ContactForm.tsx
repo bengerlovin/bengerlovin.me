@@ -20,7 +20,7 @@ const ContactForm = ({ }) => {
         validationSchema: Yup.object(ContactFormSchema),
         onSubmit: values => {
             sendEmail(values);
-            // formik.resetForm()
+            formik.resetForm()
         },
     });
 
@@ -95,7 +95,6 @@ const ContactForm = ({ }) => {
 }
 
 async function sendEmail({ name, email, message }) {
-    console.log("sending to: ", name, email, "with this message", message)
 
     let urlParams = new URLSearchParams({ name: `${name}`, email: `${email}`, message: `${message}` });
     const sendEmailResult = await fetch(`/api/mail?${urlParams}`)

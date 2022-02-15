@@ -31,6 +31,6 @@ export default async function handler(req: NextApiRequest & EmailProps, res: Nex
         res.status(200).json({ msg: "successfully sent", result: result })
 
     } catch (err) {
-        res.status(500).json({ error: 'Failed to send data' })
+        res.status(500).json({ error: 'Failed to send message' })
     }
 }
