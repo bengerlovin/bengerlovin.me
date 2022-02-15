@@ -90,7 +90,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
 export async function getStaticProps() {
 
-  let ytStats = await getYoutubeStats();
+  let ytStats: number = await getYoutubeStats();
   let recentPlaybackTime = await getSpotifyPlayHistory();
 
   let commitData: GithubCommitDataResult = await getRecentCommitData();

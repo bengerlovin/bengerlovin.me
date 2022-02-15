@@ -49,6 +49,6 @@ export default async function getYoutubeStats() {
 
     console.log("total video playback time", totalPlaybackTime)
 
-    return totalPlaybackTime.toFixed(0)
+    return parseInt(totalPlaybackTime.toFixed(0))
 
 };
