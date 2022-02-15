@@ -6,6 +6,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-gradient-dark-blue {
+  background:  linear-gradient(180.14deg,#142c69 .12%,rgba(20,44,105,0) 62.01%),#008081 !important;
+}
+
+.bg-gradient-bright {
+  background: linear-gradient(338.83deg,#f8c6ff -3.41%,rgba(255,196,255,0) 52.31%),#ffeec4 !important; 
+  background-opacity:
+}
+
+.bg-gradient-purple {
+    background: linear-gradient(6.03deg,#dacdff .5%,rgba(218,205,255,0) 46.89%),#ffeaee !important;
+}
+
+.bg-gradient-teal {
+  background: linear-gradient(314.25deg,rgba(10,185,149,.7) 1.09%,rgba(10,185,149,0) 43.26%),#dacdff !important;
+}
 
 /* Logo Animation */
 #logo > #logo-elements > #hide-layer { 

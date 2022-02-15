@@ -39,14 +39,13 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         </PageSection>
 
         {/* Featured Project Cards */}
-        <PageSection margin="mt-14">
+        <PageSection margin="mt-14" fullWidth>
 
           {/*  display screenshot of project like in madebyproxy.com */}
-          <div className='flex flex-col w-full p-6 rounded-md shadow-soft'>
-            <span>Project Card</span>
+          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-emerald-500/20 via-blue-300/30 to-indigo-500/20'>
+            <span>Project </span>
             <span>image</span>
           </div>
-
 
           {/* <div className="relative h-36 w-36">
               <Image className="rounded-full" src={'/../public/images/profile-pic.jpg'} layout="fill" />
@@ -54,6 +53,25 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
 
         </PageSection>
+
+        <PageSection margin="mt-14" fullWidth>
+
+          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20'>
+            <span>Project test </span>
+            <span>image</span>
+          </div>
+
+        </PageSection>
+
+        <PageSection margin="mt-14" fullWidth>
+
+          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-red-500/20 via-pink-500/20 to-rose-500/20'>
+            <span>Project test </span>
+            <span>image</span>
+          </div>
+
+        </PageSection>
+
 
         <PageSection>
 
