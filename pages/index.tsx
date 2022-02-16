@@ -7,12 +7,10 @@ import getSpotifyPlayHistory from 'lib/spotify';
 import getYoutubeStats from 'lib/youtube';
 import Head from 'next/head'
 import PageHeading from '@/components/PageHeading';
-import PageSubHeading from '@/components/Navigation/PageSubHeading';
 import ContactForm from '@/components/ContactForm';
 import JobSearchStatus from '@/components/JobSearchStatus';
 import Image from 'next/image';
 import ProjectHeading from '@/components/ProjectHeading';
-import Text from '@/components/Text';
 import Link from 'next/link';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
@@ -44,15 +42,32 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           </div>
         </PageSection>
 
+        {/* <PageSection margin='mt-8'>
+          <div className="flex justify-start items-center gap-x-8">
+            <button className="text-sm md:text-base flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2 text-zinc-100">
+              <span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+            <button className="text-sm md:text-base flex items-center justify-center gap-1 text-blue-800">
+              <span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+          </div>
+        </PageSection > */}
+
         {/* Featured Project Cards */}
-        <PageSection margin="mt-14">
+        < PageSection margin="mt-12" >
           <ProjectHeading>
             Featured Projects
           </ProjectHeading>
-          <p className='mt-5 text-[19px] leading-[1.65rem] text-gray-600'>Side projects and coding adventures that have been taking up my time recently. To see a full list of the technologies I build with, see my <Link href={'/uses'} passHref><a className="text-blue-800 underline hover:text-blue-500 transition-colors duration-200 ease-in-out">Uses</a></Link> page. </p>
-        </PageSection>
+          <p className='mt-5 text-[19px] tracking-[-0.015em] leading-[1.65rem] text-gray-600'>Side projects and coding adventures that I build in my spare time. </p>
+        </PageSection >
 
-        <PageSection margin="mt-9" fullWidth>
+        <PageSection margin="mt-7" fullWidth>
 
           <div className='flex flex-col items-stretch w-full py-12 px-9 md:py-12 md:px-14 rounded-lg shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20'>
             <div className="flex flex-col md:mb-3">
@@ -73,7 +88,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         </PageSection>
 
-        <PageSection margin="mt-14" fullWidth>
+        <PageSection margin="mt-10" fullWidth>
 
           {/*  display screenshot of project like in madebyproxy.com */}
           <div className='w-full py-12 px-9 md:py-12 md:px-14 rounded-lg shadow-soft bg-gradient-to-br from-emerald-500/20 via-blue-300/30 to-indigo-500/20'>
@@ -119,7 +134,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <ProjectHeading>
             Recent Posts
           </ProjectHeading>
-          <p className='mt-5 text-[19px] leading-[1.65rem] text-gray-600'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
+          <p className='mt-5 text-[19px] leading-[1.65rem] tracking-[-0.015em] text-gray-600'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
         </PageSection>
 
         {/* About And Skills And Experience */}
@@ -145,7 +160,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         </PageSection>
 
-      </PageContainer>
+      </PageContainer >
     </div >
   );
 }

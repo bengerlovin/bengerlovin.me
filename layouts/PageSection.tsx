@@ -1,8 +1,13 @@
 import React from 'react';
 
-export default function PageSection({ children, ...rest }) {
+type PageSectionProps = {
+  children: React.ReactNode;
+  margin?: string;
+  fullWidth?: boolean;
+}
 
-  let { margin, fullWidth } = rest;
+export default function PageSection({ children, margin, fullWidth }: PageSectionProps) {
+
 
   let marginStying: string = margin ?? 'my-0'
   let widthStyling: string = null
