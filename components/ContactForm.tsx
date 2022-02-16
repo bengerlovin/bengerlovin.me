@@ -32,7 +32,7 @@ const ContactForm = ({ }) => {
             <form className="w-full" onSubmit={formik.handleSubmit} >
                 <div className="flex flex-row items-start justify-between gap-4 mb-0">
                     <label className="block w-1/2 mb-6 min-h-fit" htmlFor="name">
-                        <span className="tracking-tight text-gray-600 text-md ">Name</span>
+                        <span className="tracking-tight text-gray-500 text-sm md:text-md ">Name</span>
                         <input
                             required
                             type="text"
@@ -47,7 +47,7 @@ const ContactForm = ({ }) => {
                         ) : null}
                     </label>
                     <label className="block w-1/2 mb-6" htmlFor="email">
-                        <span className="tracking-tight text-gray-600 text-md ">Email</span>
+                        <span className="tracking-tight text-gray-500 text-sm md:text-md ">Email</span>
                         <input
                             required
                             type="email"
@@ -65,22 +65,22 @@ const ContactForm = ({ }) => {
 
                 {/* Message Block */}
                 <label className="block mb-6" htmlFor="message">
-                    <span className="tracking-tight text-gray-600 text-md ">Your Message</span>
+                    <span className="tracking-tight text-gray-500 text-sm md:text-md ">Message</span>
                     <textarea
                         onChange={formik.handleChange}
                         value={formik.values.message}
                         name="message"
                         className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalMessageStyling}`}
-                        placeholder="Black bears are the best bear. Bears, beets, Battlestar Galactica..."
+                        placeholder="Black bears are the best bear..."
                     />
                     {formik.touched.message && formik.errors.message ? (
                         <div className="mt-2 text-sm text-red-500 ">{formik.errors.message}</div>
                     ) : null}
                 </label>
 
-                <button className="flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2"
+                <button className="text-sm md:text-base flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2"
                     type="submit">
-                    <span className="text-slate-100">Send Email</span>
+                    <span className="text-zinc-100">Send Email</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>

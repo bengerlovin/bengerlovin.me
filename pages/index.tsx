@@ -8,6 +8,10 @@ import { GithubCommitDataResult } from '@/types/DataTypes';
 import getSpotifyPlayHistory from 'lib/spotify';
 import getYoutubeStats from 'lib/youtube';
 import Head from 'next/head'
+import PageHeading from '@/components/PageHeading';
+import PageSubHeading from '@/components/Navigation/PageSubHeading';
+import ContactForm from '@/components/ContactForm';
+import JobSearchStatus from '@/components/JobSearchStatus';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
@@ -23,9 +27,9 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
       <PageContainer>
         {/* Intro With Name, Bio, Picture */}
         <PageSection>
-          <h2 className='mb-4 text-[45px] md:text-[48px] font-bold leading-[1.08] tracking-tighter text-zinc-800 font-lato'>
+          <PageHeading>
             Hey, I'm Ben. <br className='md:hidden' /> I build websites.
-          </h2>
+          </PageHeading>
         </PageSection>
 
         {/* Backstory / Timeline */}
@@ -99,7 +103,15 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         </PageSection>
 
         {/* Get In Touch Section */}
-        <PageSection>
+        <PageSection margin="mt-14">
+
+          <PageSubHeading>
+            Have A Question?
+          </PageSubHeading>
+
+          <p className='text-inter tracking-tight text-gray-600 mb-6 md:text-md'>To recruiters: I am <JobSearchStatus status={'searching'}>looking for a new role</JobSearchStatus>. To other developers: feel free to get in touch about anything! Always happy to chat :)</p>
+
+          <ContactForm />
 
         </PageSection>
 

@@ -4,16 +4,16 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: "'Inter', 'sans-serif'",
-      dmserif: "'DM Serif Text', 'serif'",
-      league: "'League Spartan', 'sans-serif'",
       lato: "'Lato', 'sans-serif'",
-      soehne: "'Soehne', 'sans-serif'",
+      sourceSans: "'Source Sans Pro', sans-serif",
+      heebo: "'Heebo', sans-serif",
       heading: "'DM Serif Display', 'serif'",
       'body': "'Inter', 'sans-serif'",
     },
     extend: {
       letterSpacing: {
         'tightest': '-0.056em',
+        'heading': '-0.045em',
         'tightHeading': '-0.065em'
       },
       boxShadow: {
