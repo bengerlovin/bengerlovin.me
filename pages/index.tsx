@@ -143,7 +143,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div>
             {data && !fetchError && (
               <p>
-                {JSON.stringify(data)}
+                post data
               </p>
             )}
           </div>
