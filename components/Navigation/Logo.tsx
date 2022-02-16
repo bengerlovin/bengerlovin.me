@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <>
             <Link href="/" passHref>
-                <a>
+                <a target={'_self'}>
                     <svg id="logo" className="h-12 w-44 -m-[8px]" viewBox="0 0 466 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="logo-elements">
                             <rect width="466" height="139" fill="white" />

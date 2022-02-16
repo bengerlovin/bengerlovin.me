@@ -1,3 +1,5 @@
+import PageSubHeading from '@/components/Navigation/PageSubHeading';
+import PageContainer from '@/layouts/PageContainer';
 import React, { useState } from 'react';
 
 export default function SpeedScanrProject() {
@@ -11,16 +13,12 @@ export default function SpeedScanrProject() {
 
   return (
     <>
-      <div>Speed scanr project</div>
-      <button onClick={callHelloApi}>Call hello</button>
-      <button onClick={() => setApiData(null)}>clear Data</button>
-
-      {apiData && (
-        <div>
-          <p className='font-bold'>api data</p>
-          <span className='font-semibold text-red-500'>{apiData.name}</span>
-        </div>
-      )}
+      <PageContainer>
+        <PageSubHeading>
+          Speed Scanr
+        </PageSubHeading>
+        <div>Project page template</div>
+      </PageContainer>
     </>
   );
 }

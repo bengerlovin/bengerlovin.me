@@ -8,7 +8,6 @@ import PageSection from "@/layouts/PageSection"
 const Contact = ({ }) => {
     return (
         <>
-            <Navigation />
             <PageContainer>
                 <PageSection fullWidth>
                     <PageSubHeading>
@@ -18,8 +17,6 @@ const Contact = ({ }) => {
                     <ContactForm />
                 </PageSection>
             </PageContainer>
-
-            <Footer />
         </>
     )
 }

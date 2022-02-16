@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  content: ['./pages/**/*.{js,jsx,tsx,ts}', './layouts/**/*.{js,jsx,tsx,ts}', './components/**/*.{js,jsx,tsx,ts}'],
+  content: ['./pages/**/*.{tsx,ts}', './layouts/**/*.{tsx,ts}', './components/**/*.{tsx,ts}'],
   theme: {
     fontFamily: {
       inter: "'Inter', 'sans-serif'",

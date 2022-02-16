@@ -7,17 +7,15 @@ import PageSection from "@/layouts/PageSection"
 const Uses = ({ props }) => {
     return (
         <>
-            <Navigation />
             <PageContainer>
                 <PageSection fullWidth>
                     <PageSubHeading>
                         What I Use For Coding
                     </PageSubHeading>
 
+                    <div>hello from uses page</div>
                 </PageSection>
             </PageContainer>
-
-            <Footer />
         </>
     )
 }
