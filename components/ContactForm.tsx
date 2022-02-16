@@ -32,7 +32,7 @@ const ContactForm = ({ }) => {
             <form className="w-full" onSubmit={formik.handleSubmit} >
                 <div className="flex flex-row items-start justify-between gap-4 mb-0">
                     <label className="block w-1/2 mb-6 min-h-fit" htmlFor="name">
-                        <span className="tracking-tight text-gray-500 text-sm md:text-md ">Name</span>
+                        <span className="tracking-tight text-gray-600 text-sm md:text-md ">Name</span>
                         <input
                             required
                             type="text"
@@ -47,7 +47,7 @@ const ContactForm = ({ }) => {
                         ) : null}
                     </label>
                     <label className="block w-1/2 mb-6" htmlFor="email">
-                        <span className="tracking-tight text-gray-500 text-sm md:text-md ">Email</span>
+                        <span className="tracking-tight text-gray-600 text-sm md:text-md ">Email</span>
                         <input
                             required
                             type="email"
@@ -65,7 +65,7 @@ const ContactForm = ({ }) => {
 
                 {/* Message Block */}
                 <label className="block mb-6" htmlFor="message">
-                    <span className="tracking-tight text-gray-500 text-sm md:text-md ">Message</span>
+                    <span className="tracking-tight text-gray-600 text-sm md:text-md ">Message</span>
                     <textarea
                         onChange={formik.handleChange}
                         value={formik.values.message}

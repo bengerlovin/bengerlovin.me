@@ -5,7 +5,7 @@ type TextProps = {
 
 const Text = ({ children, classes }: TextProps) => {
     return (
-        <p className={`text-inter tracking-tight text-gray-600 md:text-md ${classes ?? ''}`}>
+        <p className={`text-gray-600 leading-[1.45] text-lg tracking-tight ${classes ?? ''}`}>
             {children}
         </p>
     )

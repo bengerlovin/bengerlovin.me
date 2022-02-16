@@ -4,12 +4,13 @@ import { Slant as Hamburger } from 'hamburger-react'
 import Link from 'next/link';
 import DropdownMenu from './DropdownMenu';
 import SocialIcons from './SocialIcons';
+import MobileMenu from './MobileMenu';
 
 export default function Navigation() {
   return (
     <>
-      <nav className='flex flex-col justify-center px-8'>
-        <div className='relative flex items-center justify-between w-full max-w-3xl py-8 mx-auto'>
+      <nav className='relative flex flex-col justify-center px-8'>
+        <div className='flex items-center justify-between w-full max-w-3xl py-8 mx-auto'>
           <Logo />
 
           {/* Laptop Screen Menu List */}
@@ -38,7 +39,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className='md:hidden' >
-            <Hamburger direction='left' size={22} hideOutline={true} distance="sm" label={"Show menu"} />
+            <MobileMenu />
           </div>
         </div>
       </nav>

@@ -1,9 +1,9 @@
 import { RiGithubLine, RiTwitterLine, RiLinkedinBoxLine } from 'react-icons/ri'
 
-const SocialIcons = () => {
+const SocialIcons = ({ classes }: { classes?: string }) => {
     return (
         <>
-            <div className="flex gap-4 items-center justify-start">
+            <div className={`flex gap-4 items-center justify-start ${classes ?? ''}`}>
 
                 <a href="https://github.com/bengerlovin" target={'_blank'}>
                     <RiGithubLine size={22} className={'hover:text-blue-800 transition-all duration-200 ease-in-out'} />

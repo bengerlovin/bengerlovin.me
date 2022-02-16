@@ -1,10 +1,40 @@
 /* global fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500;700;800&family=Lato:ital,wght@0,900;1,900&family=Source+Sans+Pro:wght@900&family=Heebo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Heebo:wght@500;600;800&display=swap');
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.timeline-list-item{
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timeline-list-item:last-child{
+    border: 0px;
+    padding-bottom: 0;
+}
+.timeline-list-item::before{ 
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #1e40af;
+    box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+
+
 
 .bg-gradient-dark-blue {
   background:  linear-gradient(180.14deg,#142c69 .12%,rgba(20,44,105,0) 62.01%),#008081 !important;
