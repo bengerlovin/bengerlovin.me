@@ -37,7 +37,7 @@ const ContactForm = ({ }) => {
                             required
                             type="text"
                             name="name"
-                            className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalNameStyling}`}
+                            className={`placeholder:text-sm md:placeholder:text-[15px] block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalNameStyling}`}
                             placeholder="Dwight Schrute"
                             onChange={formik.handleChange}
                             value={formik.values.name}
@@ -52,7 +52,7 @@ const ContactForm = ({ }) => {
                             required
                             type="email"
                             name="email"
-                            className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalEmailStyling}`}
+                            className={`placeholder:text-sm md:placeholder:text-[15px] block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalEmailStyling}`}
                             placeholder="d@dundermifflin.com"
                             onChange={formik.handleChange}
                             value={formik.values.email}
@@ -70,7 +70,7 @@ const ContactForm = ({ }) => {
                         onChange={formik.handleChange}
                         value={formik.values.message}
                         name="message"
-                        className={`placeholder:text-sm md:placeholder:text-base block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalMessageStyling}`}
+                        className={`placeholder:text-sm md:placeholder:text-[15px] block w-full mt-1 rounded-md shadow-sm focus:ring  focus:ring-opacity-50 placeholder:text-gray-400 focus:placeholder:text-gray-600 ${conditionalMessageStyling}`}
                         placeholder="Black bears are the best bear..."
                     />
                     {formik.touched.message && formik.errors.message ? (

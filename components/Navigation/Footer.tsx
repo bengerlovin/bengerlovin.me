@@ -11,7 +11,7 @@ export default function Footer() {
           <hr className='bg-gray-200 h-[1px]'></hr>
 
           {/* Grid Set up */}
-          <div className='grid grid-cols-2 md:grid-cols-3 max-w-3xl pb-6 pt-9 gap-y-2 md:gap-y-3 '>
+          <div className='grid grid-cols-2 md:grid-cols-3 max-w-3xl pb-6 pt-9 gap-y-2 md:gap-y-3 pr-3 md:pr-0'>
 
             <Link href={'/about'} passHref >
               <a className='font-inter tracking-tight text-gray-600 hover:text-blue-800 transition-colors duration-150 ease-in-out text-base'>About</a>
@@ -41,8 +41,8 @@ export default function Footer() {
                 <span className='font-inter tracking-tight text-base text-blue-800'>Beam me up, Scotty &uarr;</span>
               </div> */}
             </div>
-            <div className='col-span-3 md:col-span-4 mt-4'>
-              <span className='font-inter tracking-tight text-zinc-700 text-sm flex items-center justify-start'>Copyright &copy; 2022 Ben Gerlovin - All Rights Reserved </span>
+            <div className='col-span-3 md:col-span-4 mt-8'>
+              <span className='font-inter tracking-tight text-gray-600 text-[13px] flex items-center justify-start'>Copyright &copy; 2022 Ben Gerlovin - All Rights Reserved </span>
             </div>
           </div>
         </div>
