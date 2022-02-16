@@ -13,6 +13,7 @@ import JobSearchStatus from '@/components/JobSearchStatus';
 import Image from 'next/image';
 import ProjectHeading from '@/components/ProjectHeading';
 import Text from '@/components/Text';
+import Link from 'next/link';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
@@ -44,7 +45,14 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         </PageSection>
 
         {/* Featured Project Cards */}
-        <PageSection margin="mt-14" fullWidth>
+        <PageSection margin="mt-14">
+          <ProjectHeading>
+            Featured Projects
+          </ProjectHeading>
+          <p className='mt-5 text-[19px] leading-[1.65rem] text-gray-600'>Side projects and coding adventures that have been taking up my time recently. To see a full list of the technologies I build with, see my <Link href={'/uses'} passHref><a className="text-blue-800 underline hover:text-blue-500 transition-colors duration-200 ease-in-out">Uses</a></Link> page. </p>
+        </PageSection>
+
+        <PageSection margin="mt-9" fullWidth>
 
           <div className='flex flex-col items-stretch w-full py-12 px-9 md:py-12 md:px-14 rounded-lg shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20'>
             <div className="flex flex-col md:mb-3">
@@ -107,12 +115,12 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         </PageSection>
 
-        <PageSection margin="mt-14" fullWidth>
-          <PageSubHeading>
-            A Bit About Me
-          </PageSubHeading>
+        <PageSection margin="mt-14">
+          <ProjectHeading>
+            Recent Posts
+          </ProjectHeading>
+          <p className='mt-5 text-[19px] leading-[1.65rem] text-gray-600'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
         </PageSection>
-
 
         {/* About And Skills And Experience */}
         <PageSection>
@@ -127,9 +135,9 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         {/* Get In Touch Section */}
         <PageSection margin="mt-14">
 
-          <PageSubHeading>
+          <ProjectHeading classes='mb-4'>
             Have A Question?
-          </PageSubHeading>
+          </ProjectHeading>
 
           <p className='text-gray-600 mb-6 text-lg tracking-tight'>To recruiters: I am <JobSearchStatus status={'searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
 
