@@ -9,8 +9,14 @@ export type WordPressPostsResult = {
     title: { rendered: string };
     tags: number[];
     sticky: boolean;
+    categories: number[];
     qubely_featured_image_url: { full: [string | number] }
 
+}
+
+export type WordPressCategory = {
+    id: number;
+    name: string;
 }
 
 export type GithubCommitDataResult = {

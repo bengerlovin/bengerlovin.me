@@ -2,7 +2,7 @@ import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import SpecialLink from '@/components/SpecialLink';
 import getRecentCommitData from 'lib/github-data';
-import { GithubCommitDataResult } from '@/types/DataTypes';
+import { GithubCommitDataResult, WordPressPostsResult } from '@/types/DataTypes';
 import getSpotifyPlayHistory from 'lib/spotify';
 import getYoutubeStats from 'lib/youtube';
 import Head from 'next/head'
@@ -14,12 +14,12 @@ import ProjectHeading from '@/components/ProjectHeading';
 import Link from 'next/link';
 import useSWR from 'swr';
 import fetcher from 'lib/fetcher';
+import PostList from '@/components/PostList';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
   console.log(commitCount, playbackTime, youTubeStats)
 
-  const { data, error: fetchError } = useSWR('https://happyhealthytechie.com/wp-json/wp/v2/posts', fetcher)
 
   return (
     <div className=''>
@@ -38,7 +38,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         {/* Current Updates = API Calls  */}
         <PageSection>
-          <div className='mt-3 text-xl text-gray-600'>
+          <div className='mt-3 text-xl text-gray-700'>
             <p>I'm currently working as a full-stack developer at <SpecialLink href='https://www.sponsor.com/' variant='blue'> Sponsorium, Inc</SpecialLink>. In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink href='https://www.youtube.com/playlist?list=PL3iJPs0FCV3MC-R-BAfO2b7-VN9SaUpp9' variant='yellow'>{youTubeStats} minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='https://happyhealthytechie.com' variant='green'>4 articles to my developer blog.</SpecialLink></p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
@@ -68,7 +68,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <ProjectHeading>
             Featured Projects
           </ProjectHeading>
-          <p className='mt-5 text-[19px] tracking-[-0.015em] leading-[1.65rem] text-gray-600'>Side projects and coding adventures that I build in my spare time. </p>
+          <p className='mt-5 text-[19px] tracking-[-0.015em] leading-[1.65rem] text-gray-700'>Side projects and coding adventures that I build in my spare time. </p>
         </PageSection >
 
         <PageSection margin="mt-7" fullWidth>
@@ -138,20 +138,10 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <ProjectHeading>
             Recent Posts
           </ProjectHeading>
-          <p className='mt-5 text-[19px] leading-[1.65rem] tracking-[-0.015em] text-gray-600'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
+          <p className='mt-5 mb-5 text-[19px] leading-[1.65rem] tracking-[-0.015em] text-gray-700'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
 
-          <div>
-            {data && !fetchError && (
-              <p>
-                post data
-              </p>
-            )}
-          </div>
-          <div>
-            {fetchError && (
-              <div>could not render</div>
-            )}
-          </div>
+          <PostList />
+
         </PageSection>
 
 
