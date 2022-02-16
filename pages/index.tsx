@@ -1,5 +1,3 @@
-import Footer from '@/components/Navigation/Footer';
-import NavBar from '@/components/Navigation/NavBar';
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import SpecialLink from '@/components/SpecialLink';
@@ -12,6 +10,9 @@ import PageHeading from '@/components/PageHeading';
 import PageSubHeading from '@/components/Navigation/PageSubHeading';
 import ContactForm from '@/components/ContactForm';
 import JobSearchStatus from '@/components/JobSearchStatus';
+import Image from 'next/image';
+import ProjectHeading from '@/components/ProjectHeading';
+import Text from '@/components/Text';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
@@ -24,6 +25,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <PageContainer>
+
         {/* Intro With Name, Bio, Picture */}
         <PageSection>
           <PageHeading>
@@ -31,7 +33,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           </PageHeading>
         </PageSection>
 
-        {/* Backstory / Timeline */}
+        {/* Current Updates = API Calls  */}
         <PageSection>
           <div className='mt-3 text-xl text-gray-600'>
             <p>I'm currently working as a full-stack developer at <SpecialLink href='https://www.sponsor.com/' variant='blue'> Sponsorium, Inc</SpecialLink>. In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink href='https://www.youtube.com/playlist?list=PL3iJPs0FCV3MC-R-BAfO2b7-VN9SaUpp9' variant='yellow'>{youTubeStats} minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='https://happyhealthytechie.com' variant='green'>4 articles to my developer blog.</SpecialLink></p>
@@ -44,50 +46,71 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         {/* Featured Project Cards */}
         <PageSection margin="mt-14" fullWidth>
 
-          {/*  display screenshot of project like in madebyproxy.com */}
-          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-emerald-500/20 via-blue-300/30 to-indigo-500/20'>
-            <span>Project </span>
-            <span>image</span>
-          </div>
+          <div className='flex flex-col items-stretch w-full py-12 px-9 md:py-12 md:px-14 rounded-lg shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20'>
+            <div className="flex flex-col md:mb-3">
+              <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>Developer Blog</p>
+              <ProjectHeading classes='mb-7 text-zinc-800'>Happy Healthy Techie</ProjectHeading>
+              {/* <p className='mb-8 mt-2 text-[13px] md:text-base tracking-tight font-inter text-gray-600 leading-tight'>A developer blog focused on how to break into tech, how to start learning coding on your own, and what kinds of technologies are out there.</p> */}
 
-          {/* <div className="relative h-36 w-36">
-              <Image className="rounded-full" src={'/../public/images/profile-pic.jpg'} layout="fill" />
-            </div> */}
+              {/* Desktop Image */}
+              <div className='hidden md:inline-block'>
+                <Image priority layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
+              </div>
 
-
-        </PageSection>
-
-        <PageSection margin="mt-14" fullWidth>
-
-          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20'>
-            <span>Project test </span>
-            <span>image</span>
-          </div>
-
-        </PageSection>
-
-        <PageSection margin="mt-14" fullWidth>
-
-          <div className='flex flex-col items-stretch w-full p-6 rounded-md shadow-soft bg-gradient-to-br from-red-500/20 via-pink-500/20 to-rose-500/20'>
-            <span>Project test </span>
-            <span>image</span>
-          </div>
-
-        </PageSection>
-
-
-        <PageSection>
-
-          {/* Latest Posts Section */}
-
-          {/* {latestPosts && (
-            <div>
-              {latestPosts.map((postItem) => (
-                <p key={postItem.id}>{postItem.title.rendered}</p>
-              ))}
+              <div className='inline-block md:hidden'>
+                <Image priority layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+              </div>
             </div>
-          )} */}
+          </div>
 
+        </PageSection>
+
+        <PageSection margin="mt-14" fullWidth>
+
+          {/*  display screenshot of project like in madebyproxy.com */}
+          <div className='w-full py-12 px-9 md:py-12 md:px-14 rounded-lg shadow-soft bg-gradient-to-br from-emerald-500/20 via-blue-300/30 to-indigo-500/20'>
+
+            <div className="flex flex-col md:mb-3">
+              <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>API-Powered App</p>
+              <ProjectHeading classes='mb-7 text-zinc-800'>Speed Scanr</ProjectHeading>
+              {/* <p className='mb-8 mt-2 text-[13px] md:text-base tracking-tight font-inter text-gray-600 leading-tight'>A developer blog focused on how to break into tech, how to start learning coding on your own, and what kinds of technologies are out there.</p> */}
+
+              {/* Desktop Image */}
+              <div className='hidden md:block mb-0'>
+                <div className='flex flex-col'>
+                  <Image priority layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
+                  <a target={'_blank'} href='https://happyhealthytechie.com' className='mt-4 -mb-3 text-sm text-gray-700 flex gap-x-1 justify-center items-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span className='text-[13px] text-gray-600 group-hover:text-blue-500'>View Live</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className='block md:hidden mb-0'>
+                <div className='flex flex-col'>
+                  <Image priority layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+                  <a target={'_blank'} href='https://happyhealthytechie.com' className='mt-4 -mb-3 text-sm text-gray-700 flex gap-x-1 justify-center items-center group transition-colors duration-200 ease-in-out'>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 group-hover:text-gray-400 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span className='text-[13px] text-gray-600 group-hover:text-gray-400'>View Live</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </PageSection>
+
+        <PageSection margin="mt-14" fullWidth>
+          <PageSubHeading>
+            A Bit About Me
+          </PageSubHeading>
         </PageSection>
 
 
