@@ -40,33 +40,48 @@ const MobileMenu = () => {
                     <ul
                         className='max-w-full shadow-none z-40 flex absolute bg-white h-[100vh] w-full left-0 pt-6 gap-x-2 flex-col gap-y-2 px-8'
                     >
+                        {/* About */}
                         <MobileMenuItem>
                             <Link href={'/about'} passHref>
-                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out md:text-lg text-md'>About</a>
+                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
                             </Link>
                         </MobileMenuItem>
+
+                        {/* Projects - HHT */}
                         <MobileMenuItem>
                             <Link href={'/projects/hht'}>
-                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out md:text-lg text-md'>Happy Healthy Techie</a>
+                                <div className='flex gap-x-3 items-center'>
+                                    <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
+                                    <span className='text-blue-800/60 rounded-md px-2 py-1 bg-blue-200/20 text-[12px] tracking-tight'>project</span>
+                                </div>
                             </Link>
                         </MobileMenuItem>
+
+                        {/* Projects - Speed Scanr */}
                         <MobileMenuItem>
                             <Link href={'/projects/speedscanr'}>
-                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out md:text-lg text-md'>Speed Scanr</a>
+                                <div className='flex gap-x-3 items-center'>
+                                    <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
+                                    <span className='text-blue-800/60 rounded-md px-2 py-1 bg-blue-200/20 text-[12px] tracking-tight'>project</span>
+                                </div>
                             </Link>
                         </MobileMenuItem>
+
+                        {/*  Uses */}
                         <MobileMenuItem>
                             <Link href={'/uses'}>
-                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out md:text-lg text-md'>Uses</a>
+                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
                             </Link>
                         </MobileMenuItem>
+
+                        {/* Contact */}
                         <MobileMenuItem>
                             <Link href={'/contact'}>
-                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out md:text-lg text-md'>Contact</a>
+                                <a download className=' tracking-tight text-gray-800 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
                             </Link>
                         </MobileMenuItem>
 
-
+                        {/* Bottom Row With Socials And CV Download */}
                         <div className='flex justify-between items-center mt-5 '>
                             <SocialIcons />
                             <div className='flex items-center gap-x-1.5 group border-[1px] rounded-md border-blue-700 py-1.5 px-3'>
