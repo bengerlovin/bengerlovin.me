@@ -12,10 +12,14 @@ import JobSearchStatus from '@/components/JobSearchStatus';
 import Image from 'next/image';
 import ProjectHeading from '@/components/ProjectHeading';
 import Link from 'next/link';
+import useSWR from 'swr';
+import fetcher from 'lib/fetcher';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
   console.log(commitCount, playbackTime, youTubeStats)
+
+  const { data, error: fetchError } = useSWR('https://happyhealthytechie.com/wp-json/wp/v2/posts', fetcher)
 
   return (
     <div className=''>
@@ -135,17 +139,21 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
             Recent Posts
           </ProjectHeading>
           <p className='mt-5 text-[19px] leading-[1.65rem] tracking-[-0.015em] text-gray-600'>I publish a couple of times a month to my developer-oriented blog, Happy Healthy Techie.</p>
+
+          <div>
+            {data && !fetchError && (
+              <p>
+                {JSON.stringify(data)}
+              </p>
+            )}
+          </div>
+          <div>
+            {fetchError && (
+              <div>could not render</div>
+            )}
+          </div>
         </PageSection>
 
-        {/* About And Skills And Experience */}
-        <PageSection>
-          {/* <Link href='/projects/speedscanr' as='/projects/speedscanr'>
-            <a className='px-2 py-1
-            my-5 border-blue-500 rounded-md border-[0.5px]'>
-              Speed Scanr
-            </a>
-          </Link> */}
-        </PageSection>
 
         {/* Get In Touch Section */}
         <PageSection margin="mt-14">

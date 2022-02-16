@@ -5,10 +5,15 @@ import Navigation from "@/components/Navigation/NavBar"
 import PageSubHeading from "@/components/Navigation/PageSubHeading"
 import PageContainer from '@/layouts/PageContainer'
 import PageSection from "@/layouts/PageSection"
+import Head from "next/head"
 import Link from "next/link"
 const Contact = ({ }) => {
     return (
         <>
+            <Head>
+                <title>Contact | Ben Gerlovin Portfolio</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <PageContainer>
                 <PageSection fullWidth>
                     <PageSubHeading>

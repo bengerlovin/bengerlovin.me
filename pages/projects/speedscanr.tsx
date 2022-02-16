@@ -1,5 +1,6 @@
 import PageSubHeading from '@/components/Navigation/PageSubHeading';
 import PageContainer from '@/layouts/PageContainer';
+import Head from 'next/head';
 import React, { useState } from 'react';
 
 export default function SpeedScanrProject() {
@@ -13,6 +14,10 @@ export default function SpeedScanrProject() {
 
   return (
     <>
+      <Head>
+        <title>Speed Scanr Project | Ben Gerlovin Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <PageContainer>
         <PageSubHeading>
           Speed Scanr
