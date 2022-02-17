@@ -45,7 +45,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         {/* Current Updates = API Calls  */}
         <PageSection>
-          <div className='mt-3 text-xl text-gray-700'>
+          <div className='mt-4 text-xl text-gray-700 md:mt-3'>
             <p>In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink href='https://www.youtube.com/playlist?list=PL3iJPs0FCV3MC-R-BAfO2b7-VN9SaUpp9' variant='yellow'>{youTubeStats} minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='https://happyhealthytechie.com' variant='green'>4 articles to my developer blog.</SpecialLink></p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
@@ -141,7 +141,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
         </PageSection>
 
-        <PageSection margin="mt-14">
+        <PageSection margin="mt-16">
           <ProjectHeading>
             Recent Posts
           </ProjectHeading>
