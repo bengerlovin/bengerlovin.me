@@ -36,7 +36,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className="flex flex-col items-center gap-y-9 md:flex-row-reverse md:items-center md:gap-x-3">
             <div className='block p-1 rounded-full profile-pic-background'>
               <div className='flex-shrink-0 block w-[156px] h-[156px] p-1 bg-white rounded-full md:h-32 md:w-32'>
-                <Image priority src={profilePic} height={2015} width={2015} className='rounded-full' />
+                <Image priority src={profilePic} height={2015} width={2015} className='rounded-full' layout='responsive' />
               </div>
             </div>
             <PageHeading>
@@ -92,11 +92,11 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
               {/* Desktop Image */}
               <div className='hidden md:inline-block'>
-                <Image priority layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
+                <Image layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
               </div>
 
               <div className='inline-block md:hidden'>
-                <Image priority layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+                <Image layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
               {/* Desktop Image */}
               <div className='hidden mb-0 md:block'>
                 <div className='flex flex-col'>
-                  <Image priority layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
+                  <Image layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
                   <a target={'_blank'} href='https://happyhealthytechie.com' className='flex items-center justify-center mt-4 -mb-3 text-sm text-gray-700 gap-x-1'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.25} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -129,7 +129,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
               <div className='block mb-0 md:hidden'>
                 <div className='flex flex-col'>
-                  <Image priority layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+                  <Image layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
                   <a target={'_blank'} href='https://happyhealthytechie.com' className='flex items-center justify-center mt-4 -mb-3 text-sm text-gray-700 transition-colors duration-200 ease-in-out gap-x-1 group'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-600 group-hover:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
