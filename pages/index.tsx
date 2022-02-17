@@ -25,9 +25,8 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         <title>Ben Gerlovin Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="preconnect"
-          href="https://fonts.googleapis.com"
-          crossOrigin='' />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300;400;500;700&display=optional" rel="preload" as='style' />
+          href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300;400;500;700&display=optional" rel='stylesheet' />
       </Head>
       <PageContainer>
 
