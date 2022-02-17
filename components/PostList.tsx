@@ -9,12 +9,6 @@ const PostList = ({ }) => {
 
     let { data, error: fetchError } = useSWR<WordPressPostsResult[]>('https://happyhealthytechie.com/wp-json/wp/v2/posts', fetcher)
 
-
-    // eventually show tags below posts
-
-
-    console.log(data)
-
     return (
         <>
 
