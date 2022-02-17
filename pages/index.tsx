@@ -36,7 +36,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className="flex flex-col items-center gap-y-9 md:flex-row-reverse md:items-center md:gap-x-3">
             <div className='block p-1 rounded-full profile-pic-background'>
               <div className='flex-shrink-0 block w-[156px] h-[156px] p-1 bg-white rounded-full md:h-32 md:w-32'>
-                <Image priority src={profilePic} height={2015} width={2015} className='rounded-full' layout='responsive' />
+                <Image priority src={profilePic} height={2015} width={2015} className='rounded-full' placeholder='empty' layout='responsive' />
               </div>
             </div>
             <PageHeading>
