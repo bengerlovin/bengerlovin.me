@@ -12,6 +12,7 @@ import JobSearchStatus from '@/components/JobSearchStatus';
 import Image from 'next/image';
 import ProjectHeading from '@/components/ProjectHeading';
 import PostList from '@/components/PostList';
+import profilePic from '../public/images/profile-pic-full-rounded.png'
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
@@ -32,7 +33,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className="flex flex-col items-center gap-y-9 md:flex-row-reverse md:items-center md:gap-x-3">
             <div className='block p-1 rounded-full profile-pic-background'>
               <div className='flex-shrink-0 block w-[156px] h-[156px] p-1 bg-white rounded-full md:h-32 md:w-32'>
-                <Image priority placeholder='empty' src={'/images/profile-pic.jpg'} height={2015} width={2015} className='rounded-full' />
+                <Image priority placeholder='blur' src={profilePic} height={2015} width={2015} className='rounded-full' />
               </div>
             </div>
             <PageHeading>
