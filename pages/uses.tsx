@@ -51,6 +51,10 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
+                            <span><b>TailwindCSS</b></span> - my all-time favorite CSS helper library, hands down. <a target="_blank" href="https://tailwindcss.com/" className="text-blue-800 underline hover:text-blue-400">Tailwind</a> is an API for style, meaning that it provides helper classes like represent CSS classes, i.e. <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">mt-1</code> represents a <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">margin-top</code> property set to 4px (since each unit in Tailwind is multiplied by 4). Tailwind has forced me to really appreciate how powerful CSS is since it doesn't really sugarcoat anything - when it's all said and done, you're really just writing plain-old CSS!
+                        </ArrowListItem>
+
+                        <ArrowListItem>
                             <span><b>Firebase</b></span> - my go-to for authentication and data storage. It's great for small apps and proof-of-concepts because of its NoSQL design. If I find that I need a relational database setup, I can always turn to Prisma.
                         </ArrowListItem>
 

@@ -53,19 +53,33 @@ export default function SpeedScanrProject() {
 
 
             {/* Row Of Technology Tags */}
-            <div className="flex mt-3 gap-x-2">
-              <p className='text-[12px] md:text-sm font-semibold tracking-tight text-gray-700/70 px-2 py-1 bg-gray-400/10 rounded-md'>WordPress</p>
-              <p className=' text-[12px] md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>HTML/CSS</p>
-              <p className='text-[12px] md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>PHP</p>
+            <div className="flex flex-wrap mt-3 gap-x-2">
+              <p className='text-[12px] mb-3 md:text-sm font-semibold tracking-tight text-gray-700/70 px-2 py-1 bg-gray-400/10 rounded-md'>React</p>
+              <p className=' text-[12px] mb-3 md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>Next.js</p>
+              <p className=' text-[12px] mb-3 md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>Formik</p>
+              <p className=' text-[12px] mb-3 md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>TailwindCSS</p>
+              <p className=' text-[12px] mb-3 md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>Figma</p>
+              <p className=' text-[12px] mb-3 md:text-sm px-2 py-1 font-semibold tracking-tight rounded-md text-gray-700/70 bg-gray-400/10'>Remix Icons</p>
+
             </div>
 
 
             {/* Status */}
-            <div className="flex-col items-center mt-6 gap-x-1">
+            <div className="flex-col items-center mt-4 gap-x-1">
               <h3 className='mt-4 mb-1 text-lg font-semibold tracking-tight text-gray-900 font-heebo'>
                 Project Status
               </h3>
               <span className='px-2 py-1 text-[12px] md:text-sm font-semibold tracking-tight rounded-lg bg-emerald-400/10 text-emerald-700'>COMPLETED</span>
+            </div>
+
+            <div className="flex-col items-center mt-6 gap-x-1">
+              <h3 className='mt-4 mb-1 text-lg font-semibold tracking-tight text-gray-900 font-heebo'>
+                Live Link
+              </h3>
+              <span className="flex items-center tracking-tight text-blue-800 gap-x-1 group">
+                <a href="https://speedscanr.io" target={'_blank'} className="transition-colors duration-200 ease-in-out group-hover:text-blue-400">View Project </a>
+                <svg className='w-4 h-4 transition-colors duration-200 ease-in-out fill-current group-hover:text-blue-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path fill="none" d="M0 0h24v24H0z" /><path d="M13.06 8.11l1.415 1.415a7 7 0 0 1 0 9.9l-.354.353a7 7 0 0 1-9.9-9.9l1.415 1.415a5 5 0 1 0 7.071 7.071l.354-.354a5 5 0 0 0 0-7.07l-1.415-1.415 1.415-1.414zm6.718 6.011l-1.414-1.414a5 5 0 1 0-7.071-7.071l-.354.354a5 5 0 0 0 0 7.07l1.415 1.415-1.415 1.414-1.414-1.414a7 7 0 0 1 0-9.9l.354-.353a7 7 0 0 1 9.9 9.9z" /></svg>
+              </span>
             </div>
 
           </div>
