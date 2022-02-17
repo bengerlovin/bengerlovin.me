@@ -6,6 +6,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* list item */
+
+.arrow-list-item:before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  top: 3px;
+  left: 0px;
+  display: block;
+  background-image: url('/next-arrow.png');
+  background-size: contain;
+}
+
 .profile-pic-background {
 background: linear-gradient(
     30deg,
