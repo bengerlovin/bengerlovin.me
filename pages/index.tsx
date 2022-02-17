@@ -27,7 +27,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         <link rel="preconnect"
           href="https://fonts.googleapis.com"
           crossOrigin='' />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300;400;500;700&display=swap" rel="preload" as='style' />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300;400;500;700&display=optional" rel="preload" as='style' />
       </Head>
       <PageContainer>
 
