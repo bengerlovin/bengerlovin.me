@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Text from "./Text"
 import TimelineItem from "./TimelineItem"
+import profilepic from '../public/images/profile-pic.jpg'
 
 const AboutTimeline = ({ }) => {
     return (
@@ -13,7 +14,7 @@ const AboutTimeline = ({ }) => {
 
                         <Text> Amet consectetur adipiscing elit ut aliquam. Orci eu lobortis elementum nibh tellus molestie. </Text>
                         <div className="w-full py-2 mt-4">
-                            <Image className="rounded-lg shadow-soft" height={1000} width={1000} layout='responsive' src='/images/profile-pic.jpg'></Image>
+                            <Image className="rounded-lg shadow-soft" height={1000} width={1000} placeholder='blur' src={profilepic}></Image>
                         </div>
                     </TimelineItem>
                 </li>

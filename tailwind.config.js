@@ -5,7 +5,6 @@ module.exports = {
     fontFamily: {
       inter: "'Inter', 'sans-serif'",
       lato: "'Lato', 'sans-serif'",
-      sourceSans: "'Source Sans Pro', sans-serif",
       heebo: "'Heebo', sans-serif",
       heading: "'DM Serif Display', 'serif'",
       'body': "'Inter', 'sans-serif'",
