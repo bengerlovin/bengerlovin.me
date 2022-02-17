@@ -33,11 +33,11 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>Vue.js</b></span> - I've been using Vue for about 2 years now at my current job, and it's been a fantastic experience so far. I've built a large section of the next version of my current company's software product, and Vue has definitely streamlined this with their Composition API and two-way reactivity features.
+                            <span><b>Vue.js</b></span> - I've been using Vue for about 2 years now at my current job, and it's been a fantastic experience so far. I've built a large section of my current company's next software product, and Vue has definitely streamlined this with their Composition API and two-way data binding features.
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>Next.js</b></span> - the best website/webapp framework in my opinion.Next makes it so easy and fast to bootstrap a new project, I find myself gravitating towards it for all of my React projects these days (including this site!) - even more so than create-react-app.
+                            <span><b>Next.js</b></span> - the best website/webapp framework in my opinion. Next makes it so easy and fast to bootstrap a new project, I find myself gravitating towards it for all of my React projects these days (including this site!) - even more so than create-react-app.
                         </ArrowListItem>
 
                     </ul>
