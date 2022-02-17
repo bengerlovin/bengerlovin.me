@@ -81,6 +81,13 @@ background: linear-gradient(
 
 
 /*  font faces */
+
+@font-face {
+  font-family: 'Heebo';
+  font-style:normal;
+  font-display: block; 
+}
+
 @font-face {
   font-family: 'Soehne';
   font-display: swap;
