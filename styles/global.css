@@ -6,7 +6,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.profile-pic-background {
+background: linear-gradient(
+    30deg,
+  hsl(212deg 52% 66%) 0%,
+  hsl(228deg 50% 73%) 11%,
+  hsl(258deg 45% 75%) 22%,
+  hsl(293deg 40% 73%) 33%,
+  hsl(323deg 60% 76%) 44%,
+  hsl(341deg 89% 80%) 56%,
+  hsl(356deg 100% 82%) 67%,
+  hsl(11deg 100% 80%) 78%,
+  hsl(23deg 100% 77%) 89%,
+  hsl(33deg 93% 74%) 100%
+);
+}
 .timeline-list-item{
   padding-bottom: 1.5rem;
   border-left: 1px solid #abaaed;

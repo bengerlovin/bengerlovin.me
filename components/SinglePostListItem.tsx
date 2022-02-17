@@ -39,11 +39,11 @@ const SinglePostListItem = ({ title, link, publishDate, categories: categoriesFr
     return (
         <>
             <div className=' py-4 border-b-[1px] border-gray-300/30'>
-                <a href={link} target='_blank' className='text-zinc-800 md:text-base flex justify-start gap-x-4 items-center group transition-colors duration-200 ease-in-out pr-4'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0 md:mt-1 group-hover:text-blue-500 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href={link} target='_blank' className='flex items-center justify-start pr-2 transition-colors duration-200 ease-in-out text-zinc-800 md:text-base gap-x-4 group'>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-4 h-4 transition-colors duration-200 md:mt-1 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
-                    <p className='font-medium text-base md:text-[19px] tracking-[-0.02em] text-gray-900 transition-colors duration-200 group-hover:text-blue-500 leading-[1.28]'>{truncateString(postTitle, 80)}</p>
+                    <p className='font-medium text-[18px] md:text-[19px] tracking-[-0.02em] text-gray-900 transition-colors duration-200 group-hover:text-blue-500 leading-[1.28]'>{truncateString(postTitle, 80)}</p>
                 </a>
                 <div className='pl-6 md:pl-8 pb-2 pt-5 flex gap-x-2.5'>
                     {postCategories.map((categoryItem) => (

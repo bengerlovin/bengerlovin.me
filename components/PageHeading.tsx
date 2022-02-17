@@ -1,7 +1,7 @@
 const PageHeading = ({ children }) => {
     return (
         <>
-            <h1 className='mb-4 text-[45px] md:text-[48px] font-extrabold leading-[1.08] tracking-heading text-zinc-800 font-heebo'>
+            <h1 className='mt-0 md:text-left text-[33px] md:text-[40px] font-extrabold leading-[1.08] tracking-heading text-zinc-800 font-heebo'>
                 {children}
             </h1>
         </>
