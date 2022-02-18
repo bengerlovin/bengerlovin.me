@@ -43,7 +43,7 @@ const MobileMenu = () => {
                         {/* About */}
                         <MobileMenuItem>
                             <Link href={'/about'} passHref>
-                                <a download className=' tracking-tight text-zinc-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
+                                <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
                             </Link>
                         </MobileMenuItem>
 
@@ -51,8 +51,8 @@ const MobileMenu = () => {
                         <MobileMenuItem>
                             <Link href={'/projects/hht'}>
                                 <div className='flex items-center gap-x-3'>
-                                    <a download className=' tracking-tight text-zinc-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
-                                    <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-tight font-semibold'>PROJECT</span>
+                                    <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
+                                    <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
                                 </div>
                             </Link>
                         </MobileMenuItem>
@@ -61,8 +61,8 @@ const MobileMenu = () => {
                         <MobileMenuItem>
                             <Link href={'/projects/speedscanr'}>
                                 <div className='flex items-center gap-x-3'>
-                                    <a download className=' tracking-tight text-zinc-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
-                                    <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-tight font-semibold'>PROJECT</span>
+                                    <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
+                                    <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
                                 </div>
                             </Link>
                         </MobileMenuItem>
@@ -70,14 +70,14 @@ const MobileMenu = () => {
                         {/*  Uses */}
                         <MobileMenuItem>
                             <Link href={'/uses'}>
-                                <a download className=' tracking-tight text-zinc-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
+                                <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
                             </Link>
                         </MobileMenuItem>
 
                         {/* Contact */}
                         <MobileMenuItem>
                             <Link href={'/contact'}>
-                                <a download className=' tracking-tight text-zinc-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
+                                <a download className=' tracking-tight text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
                             </Link>
                         </MobileMenuItem>
 

@@ -72,22 +72,22 @@ const Uses = ({ props }) => {
                 <PageSection margin='mt-8'>
                     <TimelineHeading title="My Gear" />
                     <ul className="pl-6 mt-2 list-disc marker:text-gray-300">
-                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-700">
                             <span>Dell XPS 15, 2020 Model</span>
                         </li>
 
-                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-700">
                             <span>AirPods Pro (noise-cancelling is a life-saver if you have cats)</span>
                         </li>
 
-                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-700">
                             <span>Logitech Triathlon Mouse</span>
                         </li>
 
-                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-700">
                             <span>Keychron K3 Keyboard</span>
                         </li>
-                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-700">
                             <span>HP 32" Full HD Monitor (2UD96AA)</span>
                         </li>
 

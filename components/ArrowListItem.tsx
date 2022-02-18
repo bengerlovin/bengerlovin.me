@@ -7,7 +7,7 @@ type ListItemProps = {
 const ArrowListItem = ({ children }: ListItemProps) => {
     return (
         <>
-            <li className='relative pb-0 pl-12 my-4 text-lg tracking-tight text-gray-800 md:text-lg arrow-list-item list-item'>
+            <li className='relative pb-0 pl-12 my-4 text-lg tracking-tight text-gray-700 md:text-lg arrow-list-item list-item'>
                 {children}
             </li>
         </>
