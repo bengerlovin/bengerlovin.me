@@ -19,7 +19,7 @@ const Uses = ({ props }) => {
             <PageContainer>
                 <PageSection fullWidth>
                     <PageSubHeading>
-                        What I Use For Coding
+                        Coding Tools I Build With
                     </PageSubHeading>
 
                     <Text>I've sampled a lot of different technologies since I began coding, and developed (pun intended) a few preferred tools. Here's a not-so-exhaustive list of the things I use to build web apps.</Text>
@@ -51,7 +51,7 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>TailwindCSS</b></span> - my all-time favorite CSS helper library, hands down. <a target="_blank" href="https://tailwindcss.com/" className="text-blue-800 underline hover:text-blue-400">Tailwind</a> is an API for style, meaning that it provides helper classes like represent CSS classes, i.e. <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">mt-1</code> represents a <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">margin-top</code> property set to 4px (since each unit in Tailwind is multiplied by 4). Tailwind has forced me to really appreciate how powerful CSS is since it doesn't really sugarcoat anything - when it's all said and done, you're really just writing plain-old CSS!
+                            <span><b>TailwindCSS</b></span> - my all-time favorite CSS helper library, hands down. <a target="_blank" href="https://tailwindcss.com/" className="text-blue-800 underline hover:text-blue-400">Tailwind</a> is an API for style, meaning that it provides helper classes that eventually resolve to vanilla-CSS classes, i.e. <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">mt-1</code> represents a class with a <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">margin-top</code> property set to 4px (since each unit in Tailwind is multiplied by 4). Tailwind has forced me to really appreciate how powerful CSS is since it doesn't really sugarcoat anything - you're basically still using vanilla CSS.
                         </ArrowListItem>
 
                         <ArrowListItem>
@@ -87,6 +87,10 @@ const Uses = ({ props }) => {
                         <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
                             <span>Keychron K3 Keyboard</span>
                         </li>
+                        <li className="pl-2 mb-3 text-lg tracking-tight text-gray-800">
+                            <span>HP 32" Full HD Monitor (2UD96AA)</span>
+                        </li>
+
 
                     </ul>
                 </PageSection>
