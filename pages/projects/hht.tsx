@@ -89,7 +89,15 @@ export default function HHTProject() {
           </ProjectHeading>
 
           <Text classes='mt-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Fundamentally, I started Happy Healthy Techie to share what I knew about health, fitness, and tech - three subjects I'm equally passionate about. I figured I would enjoy having an online platform to talk about these kinds of things as I'm always trying to learn and grow in those areas, myself.
+          </Text>
+
+          <Text classes='mt-4'>
+            As I got further along in my tech career, I saw the need for more transparency about the tech industry and what it takes to break into it, especially without any technical experience.
+          </Text>
+
+          <Text classes='mt-4'>
+            A lot of my content now focuses on that exact topic: what it's like to apply for developer jobs without a resume padded with projects and internship experience, and also what it's <em>actually</em> like being a new developer.
           </Text>
 
         </PageSection>
@@ -101,7 +109,7 @@ export default function HHTProject() {
           </ProjectHeading>
 
           <Text classes='mt-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Happy Healthy Techie is built on WordPress because it's primarily a blogging and content-creation project, not a technical one. I have definitely considered re-implementing it with Next.js and a CMS solution like Contentful or Sanity, but for now I appreciate the simplicity of maintaining a WordPress blog.
           </Text>
 
         </PageSection>
@@ -113,22 +121,19 @@ export default function HHTProject() {
           </ProjectHeading>
 
           <Text classes='mt-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            There are a lot of topics I want to write about on my blog, and the list is growing every day. Apart from written content, I've also been dabbling with video content, which tends to be a popular way to talk about tech and developer-related topics. Here's a breakdown of what I hope to publish on HHT over the next coming months:
           </Text>
 
           <Text>
             <ul>
               <ArrowListItem>
-                hello
+                Content about the job application process
               </ArrowListItem>
               <ArrowListItem>
-                hello
+                More on which technologies to focus on while learning web dev
               </ArrowListItem>
               <ArrowListItem>
-                hello
-              </ArrowListItem>
-              <ArrowListItem>
-                hello
+                How to structure your learning to prioritize the <em>right</em> concepts for your goals - i.e. web developers needs JS, data scientists need to understand statistics and ML, and so on.
               </ArrowListItem>
             </ul>
           </Text>
