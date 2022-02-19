@@ -56,12 +56,23 @@ async function getCommitsFromBranch(repoName: string) {
     let today = new Date();
     let thirtyDaysAgo = format(new Date().setDate(today.getDate() - 30), 'yyyy-MM-dd')
 
-    let commits = await octokit.request('GET /repos/{owner}/{repo}/commits', {
-        owner: owner,
-        repo: repoName,
-        since: thirtyDaysAgo,
-        per_page: 100,
-    })
+    let commitPromises = []
 
-    return { repo: repoName, commitData: commits?.data };
+    let pages = [1, 2]
+    let results = []
+
+    for await (const page of pages) {
+        let commits = await octokit.request('GET /repos/{owner}/{repo}/commits', {
+            owner: owner,
+            repo: repoName,
+            since: thirtyDaysAgo,
+            per_page: 100,
+            page: page,
+        })
+        results = [...results, commits.data]
+    }
+
+
+
+    return { repo: repoName, commitData: results };
 }
