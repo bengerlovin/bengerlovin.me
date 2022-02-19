@@ -58,22 +58,6 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           </div>
         </PageSection>
 
-        {/* <PageSection margin='mt-8'>
-          <div className="flex items-center justify-start gap-x-8">
-            <button className="text-sm md:text-base flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2 text-zinc-100">
-              <span>Get In Touch</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
-            <button className="flex items-center justify-center gap-1 text-sm text-blue-800 md:text-base">
-              <span>Get In Touch</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </PageSection > */}
 
         {/* Featured Project Cards */}
         < PageSection margin="mt-12" >
@@ -92,7 +76,6 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
               <a className="flex flex-col md:mb-3" target={'_blank'}>
                 <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>Developer Blog</p>
                 <ProjectHeading classes='mb-7 text-zinc-800'>Happy Healthy Techie</ProjectHeading>
-                {/* <p className='mb-8 mt-2 text-[13px] md:text-base tracking-tight font-inter text-gray-600 leading-tight'>A developer blog focused on how to break into tech, how to start learning coding on your own, and what kinds of technologies are out there.</p> */}
 
                 {/* Desktop Image */}
                 <div className='hidden md:inline-block'>
@@ -118,23 +101,17 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
               <a className="flex flex-col md:mb-3" target={'_blank'}>
                 <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>API-Powered App</p>
                 <ProjectHeading classes='mb-7 text-zinc-800'>Speed Scanr</ProjectHeading>
-                {/* <p className='mb-8 mt-2 text-[13px] md:text-base tracking-tight font-inter text-gray-600 leading-tight'>A developer blog focused on how to break into tech, how to start learning coding on your own, and what kinds of technologies are out there.</p> */}
+
                 {/* Desktop Image */}
                 <div className='hidden mb-0 md:block'>
                   <div className='flex flex-col'>
-                    <Image layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
-                    <a target={'_blank'} href='https://happyhealthytechie.com' className='flex items-center justify-center mt-4 -mb-3 text-sm text-gray-700 gap-x-1'>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.25} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.25} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                      </svg>
-                      <span className='text-[12px] text-gray-600 group-hover:text-blue-500'>View Live</span>
-                    </a>
+                    <Image layout='responsive' height={982} width={1512} src={'/images/speed-scanr-desktop-final.png'} className='rounded-md' />
+
                   </div>
                 </div>
                 <div className='block mb-0 md:hidden'>
                   <div className='flex flex-col'>
-                    <Image layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+                    <Image layout='responsive' height={1765} width={1512} src={'/images/speed-scanr-mobile.png'} className='rounded-md' />
                   </div>
                 </div>
               </a>
