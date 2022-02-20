@@ -83,8 +83,6 @@ export default async function getSpotifyPlayHistory() {
 
     totalPlaybackTime = parseInt(((totalPlaybackTime / 1000) / 60).toFixed(2))
 
-    console.log(totalPlaybackTime)
-
     return totalPlaybackTime;
 
 }
