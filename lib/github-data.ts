@@ -10,8 +10,6 @@ const octokit = new Octokit({
 
 export default async function getRecentCommitData() {
 
-    console.log("github token", process.env.GITHUB_PERSON_TOKEN)
-
     let raw = await octokit.request('GET /user/repos', {
     })
 
