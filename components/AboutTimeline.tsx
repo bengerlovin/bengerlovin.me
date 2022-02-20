@@ -28,7 +28,7 @@ const AboutTimeline = ({ }) => {
                             <caption className="mt-3 text-sm italic tracking-tight text-gray-600">Merck's offices in Kennilworth, NJ - my home for the summer of 2019</caption>
                         </div>
 
-                        <Text classes="mb-3"> I get to work with incredible chemists at Merck in their Drug Discovery division, and meet with several professors in New York whose labs I plan on applying in the fall to for PhD programs.</Text>
+                        <Text classes="mb-3"> I get to work with incredible chemists in Merck's Drug Discovery division, and meet with several professors in New York whose labs I plan on applying to in the fall for PhD programs.</Text>
 
                     </TimelineItem>
                 </li>
@@ -46,7 +46,7 @@ const AboutTimeline = ({ }) => {
 
                         <Text classes="mb-2">I learn the essentials of JavaScript, HTML, and CSS, as well as more advanced concepts like software design patterns, unit testing, backend technologies (Spring/Hibernate for Java).</Text>
 
-                        <Text classes="mb-3"> After several rounds of interviews in the spring of 2020, I get an offer to work as a full-stack developer at <a target="_blank" href="https://www.sponsor.com" className="text-blue-800 underline transition-colors duration-200 ease-in-out hover:text-blue-400">Sponsorium,Inc</a>.</Text>
+                        <Text classes="mb-3"> After several rounds of interviews in the spring of 2020, I get an offer to work as a full-stack developer at <a target="_blank" href="https://www.sponsor.com" className="text-blue-800 underline transition-colors duration-200 ease-in-out hover:text-blue-400">Sponsorium, Inc</a>.</Text>
 
                     </TimelineItem>
                 </li>

@@ -37,7 +37,7 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>Next.js</b></span> - the best website/webapp framework in my opinion. Next makes it so easy and fast to bootstrap a new project, I find myself gravitating towards it for all of my React projects these days (including this site!) - even more so than create-react-app.
+                            <span><b>Next.js</b></span> - the best website/web-app framework in my opinion. Next makes it so easy and fast to bootstrap a new project, I find myself gravitating towards it for all of my React projects these days (including this site!) - even more so than create-react-app.
                         </ArrowListItem>
 
                     </ul>
@@ -51,7 +51,7 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>TailwindCSS</b></span> - my all-time favorite CSS helper library, hands down. <a target="_blank" href="https://tailwindcss.com/" className="text-blue-800 underline hover:text-blue-400 transition-colors duration-200 ease-in-out">Tailwind</a> is an API for style, meaning that it provides helper classes that eventually resolve to vanilla-CSS classes, i.e. <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">mt-1</code> represents a class with a <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">margin-top</code> property set to 4px (since each unit in Tailwind is multiplied by 4). Tailwind has forced me to really appreciate how powerful CSS is since it doesn't really sugarcoat anything - you're basically still using vanilla CSS.
+                            <span><b>TailwindCSS</b></span> - my all-time favorite CSS helper library, hands down. <a target="_blank" href="https://tailwindcss.com/" className="text-blue-800 underline transition-colors duration-200 ease-in-out hover:text-blue-400">Tailwind</a> is an API for style, meaning that it provides helper classes that eventually resolve to vanilla-CSS classes, i.e. <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">mt-1</code> represents a class with a <code className="text-[17px] tracking-tight text-pink-500 rounded-sm bg-gray-200/30">margin-top</code> property set to 4px (since each unit in Tailwind is multiplied by 4). Tailwind has forced me to really appreciate how powerful CSS is since it doesn't really sugarcoat anything - you're basically still using vanilla CSS.
                         </ArrowListItem>
 
                         <ArrowListItem>
