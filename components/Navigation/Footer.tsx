@@ -25,7 +25,7 @@ export default function Footer() {
             </Link>
 
             <div className='flex items-center gap-x-1.5 group'>
-              <a href='/resume/ben-gerlovin-cv-2022.pdf' download className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter group-hover:text-blue-800'>Résumé</a>
+              <a href='/resume/ben-gerlovin-cv-2022.pdf' download className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter group-hover:text-blue-800'>Download CV</a>
 
               {/* download icon */}
               <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-700 h-[18px] w-[18px] group-hover:text-blue-800 transition-colors duration-150 ease-in-out stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
