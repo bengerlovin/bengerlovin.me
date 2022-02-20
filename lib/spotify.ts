@@ -10,8 +10,8 @@ import SpotifyWebApi from 'spotify-web-api-node'
 
 
 const credentials = {
-    clientId: process.env.SPOTIFY_CLIENT_ID,
-    clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
+    clientId: client_id,
+    clientSecret: client_secret,
     redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://bengerlovin.me/'
 };
 

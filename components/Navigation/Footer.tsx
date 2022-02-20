@@ -16,9 +16,7 @@ export default function Footer() {
             <Link href={'/about'} passHref >
               <a className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>About</a>
             </Link>
-            <Link href={'/contact'}>
-              <a className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>Contact</a>
-            </Link>
+            <a href={`mailto:ben.gerlovin@gmail.com`} className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>Contact Me</a>
             <Link href={'/uses'}>
               <a className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>Uses</a>
             </Link>
