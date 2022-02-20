@@ -12,6 +12,8 @@ import Link from '@/components/Link';
 
 import types from '../../public/code/types.png'
 import apiCall from '../../public/code/api-call.png'
+import CodeBlock from '@/components/CodeBlock';
+import { apiCallCodeString, typesCodeString } from 'data/code-strings';
 
 export default function SpeedScanrProject() {
 
@@ -138,16 +140,17 @@ export default function SpeedScanrProject() {
             The most important part of the implementation was getting the type system for a URL analysis down. For each PageSpeed API call, the response object would contain results categorized as <b>Metrics</b> and others categorized as <b>Audits</b> - converted into TypeScript types, they look like:
           </Text>
 
-          <div className='flex flex-col w-full py-2 mt-4 mb-1 shadow-soft-small'>
-            <Image priority className="rounded-lg" height={411} width={680} layout='responsive' placeholder='blur' src={types} alt="montreal downtown"></Image>
+          <div className='flex flex-col w-full py-2 mt-4 mb-1'>
+            <CodeBlock codeString={typesCodeString} />
           </div>
 
           <Text classes='mt-4'>
             Having these strict defintions made it easy to type-guard the backend API call for a URL scan:
           </Text>
 
-          <div className='flex flex-col w-full py-2 mt-4 mb-1 shadow-soft-small'>
-            <Image priority className="rounded-lg" height={483} width={680} layout='responsive' placeholder='blur' src={apiCall} alt="montreal downtown"></Image>
+          <div className='flex flex-col w-full py-2 mt-4 mb-1'>
+            <CodeBlock codeString={apiCallCodeString} />
+
           </div>
 
           <Text classes='mt-4'>
