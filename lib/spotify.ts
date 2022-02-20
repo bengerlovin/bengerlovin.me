@@ -48,8 +48,6 @@ async function setCredentials(token) {
 
 export default async function getSpotifyPlayHistory() {
 
-    console.log("-------------")
-    console.log("spotify credentials", credentials)
 
     // set up authorization before making request
     let { access_token } = await getAccessToken();
@@ -71,7 +69,6 @@ export default async function getSpotifyPlayHistory() {
             },
         })
 
-
         let parsed = await results.json();
 
         if (parsed?.items) {
@@ -86,6 +83,8 @@ export default async function getSpotifyPlayHistory() {
     }).reduce((partialSum, a) => partialSum + a, 0);
 
     totalPlaybackTime = parseInt(((totalPlaybackTime / 1000) / 60).toFixed(2))
+
+    console.log(totalPlaybackTime)
 
     return totalPlaybackTime;
 
