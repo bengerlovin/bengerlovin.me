@@ -56,7 +56,6 @@ export default async function getSpotifyPlayHistory() {
     let thirtyDaysAgo = new Date().setDate(today.getDate() - 30)
 
 
-
     let urlParams = new URLSearchParams({ after: `${thirtyDaysAgo}`, limit: '50' });
     let startingEndpoint = `${RECENTLY_PLAYED_ENDPOINT}?${urlParams}`
     let nextURL = startingEndpoint;
