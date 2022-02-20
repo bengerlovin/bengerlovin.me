@@ -58,7 +58,7 @@ async function getCommitsFromBranch(repoName: string) {
 
     let commitPromises = []
 
-    let pages = [1, 2]
+    let pages = [1, 2, 3]
     let results = []
 
     let commits = await octokit.request('GET /repos/{owner}/{repo}/commits', {
