@@ -2,10 +2,9 @@
 
 Inspired by a lot of portofios and personal sites including (but not limited to): 
 
-- [Leerob.io](https://leerob.io)
+- [Lee Robinson](https://leerob.io)
 - [Alex Lomas](https://lowmess.com)
 - [Danilo Leal](https://daniloleal.co)
-s
 ## Installing
 
 ```bash
