@@ -48,6 +48,9 @@ async function setCredentials(token) {
 
 export default async function getSpotifyPlayHistory() {
 
+    console.log("-------------")
+    console.log("spotify credentials", credentials)
+
     // set up authorization before making request
     let { access_token } = await getAccessToken();
 

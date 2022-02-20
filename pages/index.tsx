@@ -157,8 +157,6 @@ export async function getStaticProps() {
   let ytStats: number = await getYoutubeStats();
   let recentPlaybackTime = await getSpotifyPlayHistory();
 
-  console.log(recentPlaybackTime)
-
   let commitData: GithubCommitDataResult = await getRecentCommitData();
   let count = commitData.commitCount
 
