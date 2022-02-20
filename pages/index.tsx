@@ -17,12 +17,8 @@ import Link from 'next/link';
 
 export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
-
-  console.log(playbackTime)
-
-
   return (
-    <div className=''>
+    <div>
       <Head>
         <title>Ben Gerlovin Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
