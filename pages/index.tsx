@@ -15,9 +15,10 @@ import PostList from '@/components/PostList';
 import profilePic from '../public/images/profile-pic-full-rounded.png'
 import Link from 'next/link';
 
-export default function Home({ commits, commitCount, playbackTime, youTubeStats }) {
+export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
-  console.log(commits, commitCount, playbackTime, youTubeStats)
+
+  console.log(playbackTime)
 
 
   return (
@@ -155,6 +156,8 @@ export async function getStaticProps() {
 
   let ytStats: number = await getYoutubeStats();
   let recentPlaybackTime = await getSpotifyPlayHistory();
+
+  console.log(recentPlaybackTime)
 
   let commitData: GithubCommitDataResult = await getRecentCommitData();
   let count = commitData.commitCount
