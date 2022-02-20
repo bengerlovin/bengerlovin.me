@@ -9,7 +9,10 @@ export default async function getYoutubeStats() {
     // global variables
     let totalPlaybackTime = 0;
 
-    const { privateKey } = JSON.parse(process.env.GOOGLE_PRIVATE_KEY)
+
+    let privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+
+
     googleAuth = new google.auth.GoogleAuth({
         credentials: {
             client_email: process.env.GOOGLE_CLIENT_EMAIL,
