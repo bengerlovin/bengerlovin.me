@@ -93,11 +93,11 @@ export default function HHTProject() {
           </Text>
 
           <Text classes='mt-4'>
-            As I got further along in my tech career, I saw the need for more transparency about the tech industry and what it takes to break into it, especially without any technical experience.
+            As I got further along in my tech career, I saw the need for more transparency about the tech industry and what it takes to break into it, especially without any technical experience. This is when I decided to dedicate HHT solely to technical and developer-related content, and I think it was the best decision I could've made for the blog.
           </Text>
 
           <Text classes='mt-4'>
-            A lot of my content now focuses on that exact topic: what it's like to apply for developer jobs without a resume padded with projects and internship experience, and also what it's <em>actually</em> like being a new developer.
+            A lot of my content now focuses on the following: 1) what it's like to apply for developer jobs without a resume padded with projects and internship experience, and 2) what it's <em>actually</em> like being a new developer, and how to navigate your first tech job as a junior dev.
           </Text>
 
         </PageSection>
@@ -111,6 +111,13 @@ export default function HHTProject() {
           <Text classes='mt-4'>
             Happy Healthy Techie is built on WordPress because it's primarily a blogging and content-creation project, not a technical one. I have definitely considered re-implementing it with Next.js and a CMS solution like Contentful or Sanity, but for now I appreciate the simplicity of maintaining a WordPress blog.
           </Text>
+          <Text classes='mt-4'>
+            To get HHT to where I wanted it to be functionally and aesthetically, there has definitely been a lot of custom coding and workaround - WordPress themes don't always come with all the features you need, and unless there's a plugin that does what you need, it pretty much only leaves custom-build solutions.
+          </Text>
+          <Text classes='mt-4'>
+            As an example, I built a lot of the home page's UI with custom CSS classes and HTML elements, and a number of visual components in my blog like tables and syntax-highlighted code blocks are implemented via WordPress shortcodes, written in PHP.
+          </Text>
+
 
         </PageSection>
 

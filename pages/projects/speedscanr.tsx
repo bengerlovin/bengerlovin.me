@@ -100,10 +100,10 @@ export default function SpeedScanrProject() {
           </ProjectHeading>
 
           <Text classes='mt-4'>
-            Google's <Link href='https://developers.google.com/speed/docs/insights/v5/get-started'>PageSpeed Insights API</Link> offers a lot of fantastic audits for pagespeed performance, but it's <b>"Opportunities"</b> section leaves a lot to be desired. This is to be expected, since Google can't go around recommending one service over another as a way to improve page-load times - this would be a display of favoritism.
+            Google's <Link href='https://developers.google.com/speed/docs/insights/v5/get-started'>PageSpeed Insights API</Link> offers a lot of fantastic audits for pagespeed performance, but its <b>"Opportunities"</b> section (where each failing audit is discussed) leaves a lot to be desired. This is to be expected, since Google can't go around recommending one service over another as a way to improve page-load times - it has to be impartial and only show the data it collected.
           </Text>
           <Text classes='mt-4'>
-            In my experience as a tech blogger, a lot of the people that use PageSpeed insights share this frustration, especially those that are not very tech-savvy. A lot of Google's improvement tips are too broad, or use difficult terminology. Moreover, they never really say <em>what to do</em>.
+            In my experience as a tech blogger, a lot of the people that use PageSpeed insights share this frustration, especially those that are not very tech-savvy ( a lot of bloggers use WordPress and don't know what servers are or how to minify CSS). Most of Google's improvement tips are too broad, or use difficult terminology. Moreover, they never really say <em>what</em> to do, but only that something needs to be done when an audit fails.
           </Text>
           <Text classes='mt-4'>
             Speed Scanr is my implementation of the PageSpeed API, but instead of showing generic, jargon-infused tips that don't really help the vast majority of people, each audit has detailed instructions on what to improve and how. The audits are also ranked by priority, so that you never have to worry about wasting your time fixing something that won't really help improve performance.
@@ -116,10 +116,10 @@ export default function SpeedScanrProject() {
                 <b>TypeScript</b> - the response object from a PageSpeed API call is complex and multi-layered. A rigorous type system was crucial to not only simplify development but to ensure data was displayed properly
               </ArrowListItem>
               <ArrowListItem>
-                <b>Formik</b> - URLs are notoriously difficult to validate as their regex pattern is pretty ugly. Formik came in really handle with validation and submission handling built in.
+                <b>Formik</b> - URLs are notoriously difficult to validate as their regex pattern is pretty ugly. Formik came in really handy with validation and submission handling built in.
               </ArrowListItem>
               <ArrowListItem>
-                <b>Next.js's Backend Architecture</b> - each time a URL is analyzed, an fetch request is made to a custom-built API endpoint. Next.js makes this so simple to implement with its APIs folder and first-class support with TypeScript.
+                <b>Next.js's Backend Architecture</b> - each time a URL is analyzed, a fetch request is made to a custom-built API endpoint. Next.js makes this so simple to implement with its APIs folder and first-class support with TypeScript.
               </ArrowListItem>
 
             </ul>
@@ -169,7 +169,7 @@ export default function SpeedScanrProject() {
                 <b>Recommendations engine</b> - the recommendations for each audit are currently stored as JSX components, and for each URL analysis, depending on the score of an audit (from 0 to 1), a different recommendation is shown. If you pass an audit, there's no need to see what improvements you can make, versus if you fail an audit, you should see a list of all the improvements you need to implement. The recommendation engine is what will link a URL scan event to the recommendations, ensuring that for each audit, the correct JSX snippet is displayed.
               </ArrowListItem>
               <ArrowListItem>
-                <b>Stylistic updates</b> - there are a few loose ends are far as styling is concerned: the home page is a bit bare unless popualted with the result from a URL scan (this can be easily fixed with a few visual sections describing the project), and the URL scan results themselves are not fully polished
+                <b>Stylistic updates</b> - there are a few loose ends as far as styling is concerned: the home page is a bit bare unless popualted with the result from a URL scan (this can be easily fixed with a few visual sections describing the project), and the URL scan results themselves are not fully polished
               </ArrowListItem>
               <ArrowListItem>
                 <b>About and FAQ pages</b> - this is a small fix, but I think it's important to be clear about a project's goals and what someone can expect if they're poking around the site.
