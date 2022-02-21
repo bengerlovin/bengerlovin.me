@@ -30,7 +30,7 @@ Inspired by a lot of portofios and personal sites including (but not limited to)
 ## Installing
 
 ```bash
-git clone https://github.com/bengerlovin/portfolio.git
+git clone https://github.com/bengerlovin/bengerlovin.me.git
 cd portfolio
 npm i
 ```
