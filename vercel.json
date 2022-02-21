@@ -1,0 +1,9 @@
+{ 
+    "cleanUrls": true, 
+    "redirects": [
+    {
+      "source": "/download/resume",
+      "destination": "/resume/ben-gerlovin-cv-2022.pdf"
+    }
+]
+}
