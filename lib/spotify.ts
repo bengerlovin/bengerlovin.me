@@ -34,7 +34,7 @@ const getAccessToken = async () => {
     return response.json();
 };
 
-async function setCredentials(token) {
+async function setCredentials(token: string) {
 
 
     spotifyApi.setCredentials({

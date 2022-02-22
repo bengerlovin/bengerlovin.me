@@ -24,14 +24,14 @@ export default function Footer() {
               <a target={'_blank'} className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>My Dev Blog</a>
             </Link>
 
-            <div className='flex items-center gap-x-1.5 group'>
-              <a href='https://bengerlovin.me/download/cv' target={'_blank'} download className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter group-hover:text-blue-800'>Download CV</a>
+            <a href='https://bengerlovin.me/download/cv' target={'_blank'} download className='flex items-center gap-x-1.5 group'>
+              <span className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter group-hover:text-blue-800'>Download CV</span>
 
               {/* download icon */}
               <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-700 h-[18px] w-[18px] group-hover:text-blue-800 transition-colors duration-150 ease-in-out stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
               </svg>
-            </div>
+            </a>
 
 
             <div className='col-span-3 mt-5 md:col-span-4'>
