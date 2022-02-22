@@ -43,7 +43,7 @@ const MobileMenu = () => {
                         {/* About */}
                         <MobileMenuItem>
                             <Link href={'/about'} passHref>
-                                <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
+                                <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
                             </Link>
                         </MobileMenuItem>
 
@@ -51,7 +51,7 @@ const MobileMenu = () => {
                         <MobileMenuItem>
                             <Link href={'/projects/hht'}>
                                 <div className='flex items-center gap-x-3'>
-                                    <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
+                                    <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
                                     <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
                                 </div>
                             </Link>
@@ -61,7 +61,7 @@ const MobileMenu = () => {
                         <MobileMenuItem>
                             <Link href={'/projects/speedscanr'}>
                                 <div className='flex items-center gap-x-3'>
-                                    <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
+                                    <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
                                     <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
                                 </div>
                             </Link>
@@ -70,14 +70,14 @@ const MobileMenu = () => {
                         {/*  Uses */}
                         <MobileMenuItem>
                             <Link href={'/uses'}>
-                                <a download className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
+                                <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
                             </Link>
                         </MobileMenuItem>
 
                         {/* Contact */}
                         <MobileMenuItem>
                             <Link href={'/contact'}>
-                                <a download className=' tracking-tight text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
+                                <a className=' tracking-tight text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
                             </Link>
                         </MobileMenuItem>
 
@@ -85,7 +85,7 @@ const MobileMenu = () => {
                         <div className='flex items-center justify-between mt-5 '>
                             <SocialIcons />
                             <div className='flex items-center gap-x-1.5 group border-[1px] rounded-md border-blue-700 py-1.5 px-3'>
-                                <a href='/resume/ben-gerlovin-cv-2022.pdf' target={'_blank'} download className='text-sm tracking-tight text-blue-700 transition-colors duration-150 ease-in-out group-hover:text-blue-800'>Download CV</a>
+                                <a href='https://bengerlovin.me/download/cv' target={'_blank'} download className='text-sm tracking-tight text-blue-700 transition-colors duration-150 ease-in-out group-hover:text-blue-800'>Download CV</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-[18px] w-[18px] group-hover:text-blue-800 text-blue-700 transition-colors duration-150 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
                                 </svg>
