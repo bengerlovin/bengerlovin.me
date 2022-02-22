@@ -18,9 +18,9 @@ export default function Navigation() {
 
             {/* Project Drop Down Menu */}
             <DropdownMenu>
-              <span className='flex gap-1 group items-center transition-all duration-200'>
-                <a className='text-md font-inter tracking-tight text-zinc-900 underline group-hover:text-blue-700 decoration-white  focus:ring-0 focus:outline-none outline-none' target={'_blank'}>Projects</a>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-zinc-900  group-hover:text-blue-700  decoration-white" viewBox="0 0 20 20" fill="currentColor">
+              <span className='flex items-center gap-1 transition-all duration-200 group'>
+                <a className='tracking-tight underline outline-none text-md font-inter text-zinc-900 group-hover:text-blue-700 decoration-white focus:ring-0 focus:outline-none' target={'_blank'}>Projects</a>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-zinc-900 group-hover:text-blue-700 decoration-white" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </span>
@@ -28,13 +28,15 @@ export default function Navigation() {
 
             {/* About */}
             <Link passHref href={'/about'}>
-              <a className='text-md font-inter tracking-tight text-zinc-900 underline hover:text-blue-700 hover:decoration-blue-700 decoration-white transition-all duration-200' target={'_self'}>About</a>
+              <a className='tracking-tight underline transition-all duration-200 text-md font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white' target={'_self'}>About</a>
             </Link>
 
             {/* Contact */}
             <Link href={'/contact'} passHref>
-              <a className='text-md font-inter tracking-tight text-zinc-900 underline hover:text-blue-700 hover:decoration-blue-700 decoration-white transition-all duration-200' >Contact</a>
+              <a className='tracking-tight underline transition-all duration-200 text-md font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white' >Contact</a>
             </Link>
+
+            <a download={true} href="https://bengerlovin.me/download/cv" className='tracking-tight underline transition-all duration-200 text-md font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white'>Resume</a>
           </div>
 
           {/* Mobile Menu Button */}
