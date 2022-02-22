@@ -10,7 +10,7 @@ export default function Navigation() {
   return (
     <>
       <nav className='relative flex flex-col justify-center px-8'>
-        <div className='flex items-center justify-between w-full max-w-3xl py-8 mx-auto'>
+        <div className='flex items-center justify-between w-full max-w-3xl pt-8 pb-8 mx-auto md:pb-9'>
           <Logo />
 
           {/* Laptop Screen Menu List */}
