@@ -17,9 +17,6 @@ export default async function handler(req: NextApiRequest & EmailProps, res: Nex
         mail.setApiKey(process.env.SENDGRID_API_KEY)
         let { name, email, message } = req.query;
 
-        console.log("sending using", name, email, message)
-
-
         let result = await mail.send({
             from: `info@bengerlovin.me`,
             to: 'ben.gerlovin@gmail.com',

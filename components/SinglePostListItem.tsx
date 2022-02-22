@@ -28,7 +28,7 @@ const SinglePostListItem = ({ title, link, publishDate, categories: categoriesFr
             })
 
             setPostCategories(filteredCategories);
-            console.log("calling useEffect for", title, categoriesFromPostData, postCategories)
+
         }
 
         fetchAllCategories();

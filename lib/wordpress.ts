@@ -11,7 +11,6 @@ export default async function getLatestPosts() {
         return data;
     }
     catch (e) {
-        console.log("Error in fetching wordpress posts", e)
     }
 
 }
