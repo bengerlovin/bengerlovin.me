@@ -1,9 +1,7 @@
 import React from 'react';
 import Logo from './Logo'
-import { Slant as Hamburger } from 'hamburger-react'
 import Link from 'next/link';
 import DropdownMenu from './DropdownMenu';
-import SocialIcons from './SocialIcons';
 import MobileMenu from './MobileMenu';
 
 export default function Navigation() {

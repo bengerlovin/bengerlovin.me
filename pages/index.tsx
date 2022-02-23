@@ -23,9 +23,6 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         <title>Ben Gerlovin Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Personal portfolio site for Ben Gerlovin, full-stack developer, tech-blogger, cat-lover." />
-        <link rel="preconnect"
-          href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300;400;500;700&display=block" rel='stylesheet' />
       </Head>
       <PageContainer>
 
@@ -151,10 +148,14 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
 export async function getStaticProps() {
 
-  let ytStats: number = await getYoutubeStats();
-  let recentPlaybackTime = await getSpotifyPlayHistory();
 
-  let commitData: GithubCommitDataResult = await getRecentCommitData();
+  //  parallelize asynchronous calls with Promise.all
+  let [commitData, recentPlaybackTime, ytStats]: [GithubCommitDataResult, number, number] = await Promise.all([
+    getRecentCommitData(), getSpotifyPlayHistory(), await getYoutubeStats()
+  ])
+
+
+
   let count = commitData.commitCount
 
   return {
