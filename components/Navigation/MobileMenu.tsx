@@ -70,7 +70,7 @@ const MobileMenu = () => {
                         {/*  Uses */}
                         <MobileMenuItem>
                             <Link href={'/uses'}>
-                                <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Uses</a>
+                                <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>What I Code With</a>
                             </Link>
                         </MobileMenuItem>
 
