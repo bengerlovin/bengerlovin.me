@@ -26,7 +26,7 @@ const Uses = ({ props }) => {
                 </PageSection>
 
                 <PageSection margin='mt-8'>
-                    <TimelineHeading title="Frameworks" />
+                    <TimelineHeading title="Frameworks And Languages" />
                     <ul>
                         <ArrowListItem>
                             <span><b>React</b></span> - my tool of choice for most projects. I love the flexibility and extensibility React provides, and how it's fundamentally a UI framework. All of my side-projects use it, typically also paired with Next.js.
@@ -40,14 +40,27 @@ const Uses = ({ props }) => {
                             <span><b>Next.js</b></span> - the best website/web-app framework in my opinion. Next makes it so easy and fast to bootstrap a new project, I find myself gravitating towards it for all of my React projects these days (including this site!) - even more so than create-react-app.
                         </ArrowListItem>
 
+                        <ArrowListItem>
+                            <span><b>NestJS</b></span> - a fantastic tool I started using recently to build back-end applications and REST APIs. I love how opinionated Nest is, and to me it's very reminiscent of Java's Spring library in terms of syntax and structure. Not to mention, its first-class support for TypeScript makes me gravitate toward it more than the traditional Express/Node.js set up for back-end apps.
+                        </ArrowListItem>
+
+                        <ArrowListItem>
+                            <span><b>TypeScript</b></span> - my bread and butter when it comes to both front-end and back-end development. I've been coding with TypeScript for a little over a year now (at the time of writing this), and I honestly can't see myself going back to vanilla JS.
+                        </ArrowListItem>
+
+                        <ArrowListItem>
+                            <span><b>Java</b></span> - definitely the programming language I've had the most exposure to in my career thus far. I've been building with Java since 2018, and have gotten exposure to several of its frameworks including Spring and Hibernate.
+                        </ArrowListItem>
+
                     </ul>
                 </PageSection>
 
                 <PageSection margin='mt-8'>
                     <TimelineHeading title="Libraries And Miscellaneous" />
                     <ul>
+
                         <ArrowListItem>
-                            <span><b>Framer Motion</b></span> - all my animations and page-loading effects are handled by Framer Motion. Such a great library and amazing documentation, they really make it easy to craft beautiful animations quickly.
+                            <span><b>Prisma</b></span> - a fantastic ORM and query engine that pairs nicely with NestJS in my experience. The auto-generated types and first-class support with TypeScript are what initially piqued my curiosity, and after using it in several projects, I can definitely see myself using it more in the future.
                         </ArrowListItem>
 
                         <ArrowListItem>
@@ -56,6 +69,10 @@ const Uses = ({ props }) => {
 
                         <ArrowListItem>
                             <span><b>Firebase</b></span> - my go-to for authentication and data storage. It's great for small apps and proof-of-concepts because of its NoSQL design. If I find that I need a relational database setup, I can always turn to Prisma.
+                        </ArrowListItem>
+
+                        <ArrowListItem>
+                            <span><b>Framer Motion</b></span> - all my animations and page-loading effects are handled by Framer Motion. Such a great library and amazing documentation, they really make it easy to craft beautiful animations quickly.
                         </ArrowListItem>
 
                         <ArrowListItem>
