@@ -150,15 +150,15 @@ export async function getStaticProps() {
 
 
   //  parallelize asynchronous calls with Promise.all
-  let [commitData, recentPlaybackTime, ytStats]: [GithubCommitDataResult, number, number] = await Promise.all([
-    getRecentCommitData(), getSpotifyPlayHistory(), await getYoutubeStats()
+  let [recentPlaybackTime, ytStats]: [number, number] = await Promise.all([
+    getSpotifyPlayHistory(), await getYoutubeStats()
   ])
 
 
 
-  let count = commitData.commitCount
+  let count = 85;
 
   return {
-    props: { commits: commitData, commitCount: count, playbackTime: recentPlaybackTime, youTubeStats: ytStats }
+    props: { commits: count, commitCount: count, playbackTime: recentPlaybackTime, youTubeStats: ytStats }
   }
 }
