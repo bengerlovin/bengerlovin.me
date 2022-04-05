@@ -2,6 +2,7 @@ import { ContactFormSchema } from "lib/validation"
 import { Formik, useFormik } from "formik";
 import * as Yup from 'yup'
 import toast from 'react-hot-toast';
+import { useState } from "react";
 
 const initialValues = {
     name: '',
@@ -11,12 +12,14 @@ const initialValues = {
 
 const ContactForm = ({ }) => {
 
-
+    const [isFormSubmitting, setIsFormSubmitting] = useState(false)
     const formik = useFormik({
         initialValues: initialValues,
         validationSchema: Yup.object(ContactFormSchema),
         onSubmit: async (values) => {
+            setIsFormSubmitting(true)
             await sendEmail(values);
+            setIsFormSubmitting(false);
             formik.resetForm()
         },
     });
@@ -32,7 +35,7 @@ const ContactForm = ({ }) => {
             <form className="w-full" onSubmit={formik.handleSubmit} >
                 <div className="flex flex-row items-start justify-between gap-4 mb-0">
                     <label className="block w-1/2 mb-6 min-h-fit" htmlFor="name">
-                        <span className="tracking-tight text-gray-600 text-sm md:text-md ">Name</span>
+                        <span className="text-sm tracking-tight text-gray-600 md:text-md ">Name</span>
                         <input
                             required
                             type="text"
@@ -47,7 +50,7 @@ const ContactForm = ({ }) => {
                         ) : null}
                     </label>
                     <label className="block w-1/2 mb-6" htmlFor="email">
-                        <span className="tracking-tight text-gray-600 text-sm md:text-md ">Email</span>
+                        <span className="text-sm tracking-tight text-gray-600 md:text-md ">Email</span>
                         <input
                             required
                             type="email"
@@ -65,7 +68,7 @@ const ContactForm = ({ }) => {
 
                 {/* Message Block */}
                 <label className="block mb-6" htmlFor="message">
-                    <span className="tracking-tight text-gray-600 text-sm md:text-md ">Message</span>
+                    <span className="text-sm tracking-tight text-gray-600 md:text-md ">Message</span>
                     <textarea
                         onChange={formik.handleChange}
                         value={formik.values.message}
@@ -78,9 +81,9 @@ const ContactForm = ({ }) => {
                     ) : null}
                 </label>
 
-                <button className="text-sm md:text-base flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2"
+                <button disabled={isFormSubmitting} className="text-sm md:text-base flex items-center justify-center gap-1 py-2.5 px-4 border-[1px] rounded-md border-blue-900 bg-blue-700  focus:outline-blue-400 focus:outline-2"
                     type="submit">
-                    <span className="text-zinc-100">Send Message</span>
+                    <span className={'text-zinc-100'}>{isFormSubmitting ? 'Sending Message' : 'Send Message'}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
