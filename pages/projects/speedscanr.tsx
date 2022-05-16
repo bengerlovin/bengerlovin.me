@@ -100,13 +100,13 @@ export default function SpeedScanrProject() {
           </ProjectHeading>
 
           <Text classes='mt-4'>
-            Google's <Link href='https://developers.google.com/speed/docs/insights/v5/get-started'>PageSpeed Insights API</Link> offers a lot of fantastic audits for pagespeed performance, but its <b>"Opportunities"</b> section (where each failing audit is discussed) leaves a lot to be desired. This is to be expected, since Google can't go around recommending one service over another as a way to improve page-load times - it has to be impartial and only show the data it collected.
+            Google's <Link href='https://developers.google.com/speed/docs/insights/v5/get-started'>PageSpeed Insights API</Link> offers a lot of fantastic audits for pagespeed performance, but its <b>"Opportunities"</b> section (where each failing audit is discussed) doesn't give any opinions on how to improve. This is to be expected, since Google can't go around recommending one service over another as a way to improve page-load times - it has to be impartial and only show the data it collected.
           </Text>
           <Text classes='mt-4'>
-            In my experience as a tech blogger, a lot of the people that use PageSpeed insights share this frustration, especially those that are not very tech-savvy ( a lot of bloggers use WordPress and don't know what servers are or how to minify CSS). Most of Google's improvement tips are too broad, or use difficult terminology. Moreover, they never really say <em>what</em> to do, but only that something needs to be done when an audit fails.
+            In my experience as a tech blogger, a lot of the people that use PageSpeed Insights need actionable tips on how to improve upon their performance audits, especially those that are not very tech-savvy (a lot of bloggers use WordPress and don't know what servers are or how to minify CSS). Most of Google's improvement tips are too broad, or use difficult terminology. Moreover, they never really say <em>what</em> to do, but only that something needs to be done when an audit fails.
           </Text>
           <Text classes='mt-4'>
-            Speed Scanr is my implementation of the PageSpeed API, but instead of showing generic, jargon-infused tips that don't really help the vast majority of people, each audit has detailed instructions on what to improve and how. The audits are also ranked by priority, so that you never have to worry about wasting your time fixing something that won't really help improve performance.
+            Speed Scanr is my implementation of the PageSpeed API, but instead of showing generic, jargon-infused tips that are more targeted towards tech-savvy users, each audit has detailed instructions on what to improve and how. The audits are also ranked by priority, so that you never have to worry about wasting your time fixing something that won't really help improve performance.
           </Text>
 
           <Text classes='mt-4'>
