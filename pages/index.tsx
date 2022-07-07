@@ -133,7 +133,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
             Have A Question?
           </ProjectHeading>
 
-          <p className='mb-6 text-lg tracking-tight text-gray-600'>To recruiters: I am <JobSearchStatus status={'not-searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
+          <p className='mb-6 text-lg tracking-tight text-gray-600'>To recruiters: I am <JobSearchStatus status={'not-searching'} />. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
 
           <ContactForm />
 
