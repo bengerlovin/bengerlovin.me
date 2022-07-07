@@ -92,8 +92,8 @@ const AboutTimeline = ({ }) => {
                     </TimelineItem>
                 </li>
                 <li className="timeline-list-item">
-                    <TimelineItem title="What I'm Up To Now" date="February 2022">
-                        <Text classes="mb-2">Currently, I'm <JobSearchStatus status="not-searching" /> as a full-stack developer, specifically with either a React or Vue.js-based tech stack. Want to get in touch? Feel free to <Link passHref href={'/contact'}><a className="text-blue-800 underline hover:text-blue-400">send me a message :)</a></Link> </Text>
+                    <TimelineItem title="What I'm Up To Now" date="June 2022">
+                        <Text classes="mb-2">I've started a new job at Google Montréal working on WebProtect, a security service offered within the Chrome Enterprise product family. To any developers (or soon-to-be developers) based in Montréal, feel free to reach out! I'm always open to chat :)</Text>
 
                     </TimelineItem>
                 </li>
