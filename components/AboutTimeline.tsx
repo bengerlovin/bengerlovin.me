@@ -93,7 +93,7 @@ const AboutTimeline = ({ }) => {
                 </li>
                 <li className="timeline-list-item">
                     <TimelineItem title="What I'm Up To Now" date="February 2022">
-                        <Text classes="mb-2">Currently, I'm <JobSearchStatus status="searching">looking for a new role</JobSearchStatus> as a full-stack developer, specifically with either a React or Vue.js-based tech stack. Want to get in touch? Feel free to <Link passHref href={'/contact'}><a className="text-blue-800 underline hover:text-blue-400">send me a message :)</a></Link> </Text>
+                        <Text classes="mb-2">Currently, I'm <JobSearchStatus status="not-searching">looking for a new role</JobSearchStatus> as a full-stack developer, specifically with either a React or Vue.js-based tech stack. Want to get in touch? Feel free to <Link passHref href={'/contact'}><a className="text-blue-800 underline hover:text-blue-400">send me a message :)</a></Link> </Text>
 
                     </TimelineItem>
                 </li>

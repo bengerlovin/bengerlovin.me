@@ -36,7 +36,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
               </div>
             </div>
             <PageHeading>
-              Hey, I'm Ben. I'm a full-stack developer / tech blogger currently working at <SpecialLink href='https://www.sponsor.com/' variant='blue'>Sponsorium, Inc.</SpecialLink>
+              Hey, I'm Ben. I'm a full-stack developer / tech blogger currently working at <SpecialLink href='https://careers.google.com/locations/montreal/' variant='blue'>Google.</SpecialLink>
             </PageHeading>
           </div>
 
@@ -133,7 +133,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
             Have A Question?
           </ProjectHeading>
 
-          <p className='mb-6 text-lg tracking-tight text-gray-600'>To recruiters: I am <JobSearchStatus status={'searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
+          <p className='mb-6 text-lg tracking-tight text-gray-600'>To recruiters: I am <JobSearchStatus status={'not-searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
 
           <ContactForm />
 
@@ -156,7 +156,7 @@ export async function getStaticProps() {
 
 
 
-  let count = 85;
+  let count = 43;
 
   return {
     props: { commits: count, commitCount: count, playbackTime: recentPlaybackTime, youTubeStats: ytStats }

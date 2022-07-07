@@ -19,7 +19,7 @@ const Contact = ({ }) => {
                     <PageSubHeading>
                         Have A Question?
                     </PageSubHeading>
-                    <p className='mb-6 tracking-tight text-gray-600 text-inter md:text-md'>To recruiters: I am <JobSearchStatus status={'searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
+                    <p className='mb-6 tracking-tight text-gray-600 text-inter md:text-md'>To recruiters: I am <JobSearchStatus status={'not-searching'}>looking for a new role</JobSearchStatus>. To everyone else: feel free to get in touch about anything! Always happy to chat :)</p>
 
                     {/* Contact Form */}
                     <ContactForm />
