@@ -24,10 +24,10 @@ function MyApp({ Component, pageProps }) {
             // Default options for specific types
             success: {
               duration: 3500,
-              theme: {
+              iconTheme: {
                 primary: 'green',
                 secondary: 'white',
-              },
+              }
             },
           }}
         />

@@ -1,4 +1,4 @@
-import { withContentlayer } from 'next-contentlayer'
+const { withContentlayer } = require('next-contentlayer');
 
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -9,5 +9,6 @@ module.exports = withContentlayer(withBundleAnalyzer({
   reactStrictMode: true,
   typescript: {
     tsconfigPath: './tsconfig.json'
-  }
-}))
+  },
+}
+)); 
