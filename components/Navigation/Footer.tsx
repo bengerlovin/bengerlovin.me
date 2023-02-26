@@ -42,7 +42,7 @@ export default function Footer() {
               </div> */}
             </div>
             <div className='col-span-3 mt-8 md:col-span-4'>
-              <span className='font-inter tracking-tight text-gray-600 text-[13px] flex items-center justify-start'>Copyright &copy; 2022 Ben Gerlovin - All Rights Reserved </span>
+              <span className='font-inter tracking-tight text-gray-600 text-[13px] flex items-center justify-start'>Copyright &copy; 2023 Ben Gerlovin - All Rights Reserved </span>
             </div>
           </div>
         </div>
