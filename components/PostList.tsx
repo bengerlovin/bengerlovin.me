@@ -27,7 +27,7 @@ const PostList = ({ }) => {
             )}
 
             {fetchError && (
-                <div>couldn't find data</div>
+                <div></div>
             )}
         </>
     )
