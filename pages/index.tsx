@@ -67,7 +67,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className='flex flex-col items-stretch w-full py-12 rounded-lg px-9 md:py-12 md:px-14 shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20 transition-colors duration-200 ease-in-out border-[2.5px] border-gray-100 md:p-2 hover:border-blue-500 cursor-pointer'>
 
             {/* Project Card Body (With Link To Project) */}
-            <Link href='https://happyhealthytechie.com' passHref>
+            <Link legacyBehavior href='https://happyhealthytechie.com' passHref>
               <a className="flex flex-col md:mb-3" target={'_blank'}>
                 <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>Developer Blog</p>
                 <ProjectHeading classes='mb-7 text-zinc-800'>Happy Healthy Techie</ProjectHeading>
@@ -92,7 +92,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className='w-full py-12 rounded-lg px-9 md:py-12 md:px-14 shadow-soft bg-gradient-to-br from-emerald-500/20 via-blue-300/30 to-indigo-500/20 transition-colors duration-200 ease-in-out border-[2.5px] border-gray-100 md:p-2 hover:border-blue-500 cursor-pointer'>
 
             {/* Project Card Body (With Link) */}
-            <Link href='https://github.com/bengerlovin/speed-scanr' passHref>
+            <Link legacyBehavior href='https://github.com/bengerlovin/speed-scanr' passHref>
               <a className="flex flex-col md:mb-3" target={'_blank'}>
                 <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>API-Powered App</p>
                 <ProjectHeading classes='mb-7 text-zinc-800'>Speed Scanr</ProjectHeading>
