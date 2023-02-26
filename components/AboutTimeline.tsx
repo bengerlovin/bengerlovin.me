@@ -24,7 +24,7 @@ const AboutTimeline = ({ }) => {
                         <Text classes="mb-2">I'm accepted into a prestigious pharmaceutical internship at Merck's headquarters in Kennilworth. I pack my bags and move to New Jersey for the summer of 2019. </Text>
 
                         <div className="flex flex-col w-full py-2 mt-4 mb-3 md:p-2">
-                            <Image className="rounded-lg shadow-soft" height={500} width={1000} layout='responsive' placeholder='blur' src={merckOffices}></Image>
+                            <Image className="rounded-lg shadow-soft" height={500} width={1000} layout='responsive' alt='Mercks Kenilworth Offices' placeholder='blur' src={merckOffices}></Image>
                             <caption className="mt-3 text-sm italic tracking-tight text-gray-600">Merck's offices in Kennilworth, NJ - my home for the summer of 2019</caption>
                         </div>
 

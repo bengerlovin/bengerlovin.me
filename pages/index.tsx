@@ -32,7 +32,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className="flex flex-col items-center gap-y-9 md:flex-row-reverse md:items-center md:gap-x-3">
             <div className='block p-1 rounded-full profile-pic-background'>
               <div className='flex-shrink-0 block w-[156px] h-[156px] p-1 bg-white rounded-full md:h-32 md:w-32'>
-                <Image priority src={profilePic} height={2015} width={2015} className='rounded-full' placeholder='empty' layout='responsive' />
+                <Image alt='Ben Gerlovin profile picture portrait photo' priority src={profilePic} height={2015} width={2015} className='rounded-full' placeholder='empty' layout='responsive' />
               </div>
             </div>
             <PageHeading>
@@ -74,11 +74,11 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
 
                 {/* Desktop Image */}
                 <div className='hidden md:inline-block'>
-                  <Image layout='responsive' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
+                  <Image layout='responsive' alt='hht project screnshot' height={982} width={1512} src={'/images/hht-screenshot.png'} className='rounded-md' />
                 </div>
 
                 <div className='inline-block md:hidden'>
-                  <Image layout='responsive' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
+                  <Image layout='responsive' alt='hht project screnshot' height={1765} width={1512} src={'/images/hht-screenshot-mobile.png'} className='rounded-md' />
                 </div>
               </a>
             </Link>
@@ -100,13 +100,13 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
                 {/* Desktop Image */}
                 <div className='hidden mb-0 md:block'>
                   <div className='flex flex-col'>
-                    <Image layout='responsive' height={982} width={1512} src={'/images/speed-scanr-desktop-final.png'} className='rounded-md' />
+                    <Image layout='responsive' alt='speed scanner project' height={982} width={1512} src={'/images/speed-scanr-desktop-final.png'} className='rounded-md' />
 
                   </div>
                 </div>
                 <div className='block mb-0 md:hidden'>
                   <div className='flex flex-col'>
-                    <Image layout='responsive' height={1765} width={1512} src={'/images/speed-scanr-mobile.png'} className='rounded-md' />
+                    <Image layout='responsive' alt='speed scanner project' height={1765} width={1512} src={'/images/speed-scanr-mobile.png'} className='rounded-md' />
                   </div>
                 </div>
               </a>

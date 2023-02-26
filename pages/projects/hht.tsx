@@ -26,7 +26,6 @@ export default function HHTProject() {
           </h3>
 
 
-
           {/* Intro Paragraph */}
           <Text classes='mb-2'>My litte corner of the internet came to life in early 2021. It began as a way to talk about my musings in tech, fitness, health, and everything in between - gradually, I decided to dedicate it solely to tech. </Text>
 
