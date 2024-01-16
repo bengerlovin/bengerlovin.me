@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Logo = () => {
     return (
         <>
-            <Link legacyBehavior href="/" passHref>
+            <Link legacyBehavior href="/" passHref aria-label='Ben Gerlovin Portfolio Logo'>
                 <a target={'_self'}>
                     <svg id="logo" className="h-12 w-44 -m-[8px]" viewBox="0 0 466 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="logo-elements">
