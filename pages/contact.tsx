@@ -27,7 +27,7 @@ const Contact = ({ }) => {
                     <PageSubHeading classes="mt-16">
                         Freelance Work
                     </PageSubHeading>
-                    <p className='mb-2 tracking-tight text-gray-600 text-inter md:text-md'>Occasionally, I'll take on web design projects in my spare time. Right now, I'm not taking new clients - you can check back here later for updates. Feel free to look at my <Link href={'/uses'} passHref><a className="text-blue-800 underline transition-colors duration-200 ease-in-out hover:text-blue-500">Uses</a></Link> page to see what I normally build with.</p>
+                    <p className='mb-2 tracking-tight text-gray-600 text-inter md:text-md'>Occasionally, I'll take on web design projects in my spare time. Right now, I'm not taking new clients - you can check back here later for updates. Feel free to look at my <Link legacyBehavior href={'/uses'} passHref><a className="text-blue-800 underline transition-colors duration-200 ease-in-out hover:text-blue-500">Uses</a></Link> page to see what I normally build with.</p>
                 </PageSection>
             </PageContainer>
         </>

@@ -10,12 +10,12 @@ const DropdownMenu = ({ children, menuItems }: { children: any; menuItems: { hre
                         <Popover.Button>{children}</Popover.Button>
                         <Popover.Panel as='div' className={'mt-1 absolute py-5 px-4 flex flex-col bg-white z-10 rounded-md shadow-soft min-w-max'}>
                             <div className='mb-2'>
-                                <Link href={menuItems[0].href} passHref>
+                                <Link legacyBehavior href={menuItems[0].href} passHref>
                                     <a className='pl-1 pr-3 text-base tracking-tight underline transition-all duration-200 font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white' target={'_self'}>{menuItems[0].title}</a>
                                 </Link>
                             </div>
                             <div>
-                                <Link href={menuItems[1].href}>
+                                <Link legacyBehavior href={menuItems[1].href}>
                                     <a className='pl-1 pr-3 text-base tracking-tight underline transition-all duration-200 font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white' target={'_self'}>{menuItems[1].title}</a>
                                 </Link>
                             </div>

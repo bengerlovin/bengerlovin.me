@@ -13,15 +13,15 @@ export default function Footer() {
           {/* Grid Set up */}
           <div className='grid max-w-3xl grid-cols-2 pb-6 pr-3 md:grid-cols-3 pt-9 gap-y-2 md:gap-y-3 md:pr-0'>
 
-            <Link href={'/about'} passHref >
+            <Link legacyBehavior href={'/about'} passHref >
               <a className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>About</a>
             </Link>
             <a href={`mailto:ben.gerlovin@gmail.com`} className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>Contact Me</a>
-            <Link href={'/uses'}>
+            <Link legacyBehavior href={'/uses'}>
               <a className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>Uses</a>
             </Link>
-            <Link href={'https://happyhealthytechie.com'} passHref>
-              <a target={'_blank'} className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>My Dev Blog</a>
+            <Link legacyBehavior href={'/'} passHref>
+              < a target={'_blank'} className='text-base tracking-tight text-gray-600 transition-colors duration-150 ease-in-out font-inter hover:text-blue-800'>My Dev Blog</a>
             </Link>
 
             <a href='https://bengerlovin.me/download/cv' target={'_blank'} download className='flex items-center gap-x-1.5 group'>
@@ -42,7 +42,7 @@ export default function Footer() {
               </div> */}
             </div>
             <div className='col-span-3 mt-8 md:col-span-4'>
-              <span className='font-inter tracking-tight text-gray-600 text-[13px] flex items-center justify-start'>Copyright &copy; 2023 Ben Gerlovin - All Rights Reserved </span>
+              <span className='font-inter tracking-tight text-gray-600 text-[13px] flex items-center justify-start'>Copyright &copy; 2024 Ben Gerlovin - All Rights Reserved </span>
             </div>
           </div>
         </div>

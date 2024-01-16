@@ -42,14 +42,14 @@ const MobileMenu = () => {
                     >
                         {/* About */}
                         <MobileMenuItem>
-                            <Link href={'/about'} passHref>
+                            <Link legacyBehavior href={'/about'} passHref>
                                 <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>About</a>
                             </Link>
                         </MobileMenuItem>
 
                         {/* Projects - HHT */}
                         <MobileMenuItem>
-                            <Link href={'/projects/hht'}>
+                            <Link legacyBehavior href={'/projects/hht'}>
                                 <div className='flex items-center gap-x-3'>
                                     <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Happy Healthy Techie</a>
                                     <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
@@ -59,7 +59,7 @@ const MobileMenu = () => {
 
                         {/* Projects - Speed Scanr */}
                         <MobileMenuItem>
-                            <Link href={'/projects/speedscanr'}>
+                            <Link legacyBehavior href={'/projects/speedscanr'}>
                                 <div className='flex items-center gap-x-3'>
                                     <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Speed Scanr</a>
                                     <span className='text-blue-800/70 rounded-md px-2 py-1 bg-blue-200/20 text-[11px] tracking-[-0.015em] font-semibold'>PROJECT</span>
@@ -69,14 +69,14 @@ const MobileMenu = () => {
 
                         {/*  Uses */}
                         <MobileMenuItem>
-                            <Link href={'/uses'}>
+                            <Link legacyBehavior href={'/uses'}>
                                 <a className=' tracking-[-0.015em] text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>What I Code With</a>
                             </Link>
                         </MobileMenuItem>
 
                         {/* Contact */}
                         <MobileMenuItem>
-                            <Link href={'/contact'}>
+                            <Link legacyBehavior href={'/contact'}>
                                 <a className=' tracking-tight text-gray-700 group-hover:text-blue-800 transition-colors duration-150 ease-in-out text-[17px]'>Contact</a>
                             </Link>
                         </MobileMenuItem>

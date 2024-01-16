@@ -35,7 +35,7 @@ export default function Navigation() {
             </DropdownMenu>
 
             {/* Contact */}
-            <Link href={'/contact'} passHref>
+            <Link legacyBehavior href={'/contact'} passHref>
               <a className='tracking-tight underline transition-all duration-200 text-md font-inter text-zinc-900 hover:text-blue-700 hover:decoration-blue-700 decoration-white' >Contact</a>
             </Link>
 

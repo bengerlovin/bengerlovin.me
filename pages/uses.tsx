@@ -76,7 +76,7 @@ const Uses = ({ props }) => {
                         </ArrowListItem>
 
                         <ArrowListItem>
-                            <span><b>Formik</b></span> - handles validation and submission logic for forms. Great features with minimal set-up, perfect for contact forms (like the one on my <Link passHref href={'/contact'}><a target="_blank" className="text-blue-800 underline hover:text-blue-400">Contact page</a></Link>)
+                            <span><b>Formik</b></span> - handles validation and submission logic for forms. Great features with minimal set-up, perfect for contact forms (like the one on my <Link legacyBehavior passHref href={'/contact'}><a target="_blank" className="text-blue-800 underline hover:text-blue-400">Contact page</a></Link>)
                         </ArrowListItem>
 
                         <ArrowListItem>

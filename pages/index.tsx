@@ -1,10 +1,7 @@
 import PageContainer from '@/layouts/PageContainer';
 import PageSection from '@/layouts/PageSection';
 import SpecialLink from '@/components/SpecialLink';
-import getRecentCommitData from 'lib/github-data';
-import { GithubCommitDataResult } from '@/types/DataTypes';
 import getSpotifyPlayHistory from 'lib/spotify';
-import getYoutubeStats from 'lib/youtube';
 import Head from 'next/head'
 import PageHeading from '@/components/PageHeading';
 import ContactForm from '@/components/ContactForm';
@@ -46,7 +43,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
         {/* Current Updates = API Calls  */}
         <PageSection>
           <div className='mt-4 text-xl text-gray-700 md:mt-3'>
-            <p>In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink href='https://www.youtube.com/playlist?list=PL3iJPs0FCV3MC-R-BAfO2b7-VN9SaUpp9' variant='yellow'>{youTubeStats} minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='https://happyhealthytechie.com' variant='green'>4 articles to my developer blog.</SpecialLink></p>
+            <p>In the past month, I've pushed <SpecialLink variant='purple' href='https://github.com/bengerlovin'>{commitCount} commits to Github</SpecialLink>, watched <SpecialLink href='https://www.youtube.com/playlist?list=PL3iJPs0FCV3MC-R-BAfO2b7-VN9SaUpp9' variant='yellow'>{youTubeStats} minutes of coding tutorials</SpecialLink> on YouTube, listened to <SpecialLink variant='rose' href='https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played'>{playbackTime} minutes of music on Spotify</SpecialLink>, and published <SpecialLink href='/' variant='green'>4 articles to my developer blog.</SpecialLink></p>
             {/* <div className='my-4'>
               <p> Currently based in &rarr; Montreal</p>
             </div> */}
@@ -67,7 +64,7 @@ export default function Home({ commitCount, playbackTime, youTubeStats }) {
           <div className='flex flex-col items-stretch w-full py-12 rounded-lg px-9 md:py-12 md:px-14 shadow-soft bg-gradient-to-br from-yellow-300/20 via-yellow-500/20 to-rose-500/20 transition-colors duration-200 ease-in-out border-[2.5px] border-gray-100 md:p-2 hover:border-blue-500 cursor-pointer'>
 
             {/* Project Card Body (With Link To Project) */}
-            <Link legacyBehavior href='https://happyhealthytechie.com' passHref>
+            <Link legacyBehavior href='/' passHref>
               <a className="flex flex-col md:mb-3" target={'_blank'}>
                 <p className='mb-2.5 text-[13px] md:text-base tracking-tight  text-gray-500 leading-tight'>Developer Blog</p>
                 <ProjectHeading classes='mb-7 text-zinc-800'>Happy Healthy Techie</ProjectHeading>
